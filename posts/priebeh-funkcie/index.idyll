@@ -237,7 +237,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 [/CustomTable]
 
 [equation display:true]
-y=x+1
+\color{red}{y=x+1}
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -290,7 +290,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = 1 \cdot e^{\frac{1}{x}}+x \cdot e^{\frac{1}{x}} \cdot (-1) \cdot x - 2
+      = 1 \cdot e^{\frac{1}{x}}+x \cdot e^{\frac{1}{x}} \cdot (-1) \cdot x^{-2}
     [/equation]
   [/td]
 [/tr]
@@ -298,7 +298,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}}-x \cdot e^{\frac{1}{x}}x x
+      = e^{\frac{1}{x}}-\frac{x \cdot e^{\frac{1}{x}}}{x^{x}}
     [/equation]
   [/td]
 [/tr]
@@ -306,7 +306,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}}-e^{\frac{1}{x}}x
+      = e^{\frac{1}{x}} - \frac{e^{\frac{1}{x}}}{x}
     [/equation]
   [/td]
 [/tr]
@@ -314,7 +314,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = x \cdot e^{\frac{1}{x}}-e^{\frac{1}{x}}x
+      = \frac{x \cdot e^{\frac{1}{x}}-e^{\frac{1}{x}}}{x}
     [/equation]
   [/td]
 [/tr]
@@ -322,7 +322,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}} \cdot (x-1)x
+      = \color{green}{\frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
     [/equation]
   [/td]
 [/tr]
@@ -337,7 +337,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
 
 [step]
 [div id:"sekcia-7"/]
-7. Stacionárne body:
+### 7. Stacionárne body:
 
 Stacinárne body sú body z definičného oboru spojitej funkcie [equation]f[/equation], v ktorých
 je [equation]f^{\prime}(x)=0[/equation] alebo [equation]f^{\prime}[/equation] neexistuje.
@@ -349,7 +349,7 @@ e^{\frac{1}{x}} \cdot (x-1) = 0 \implies e^{\frac{1}{x}} = 0
 alebo
 
 [equation display:true]
-x-1=0 \implies x-1=0 \implies x=1
+x-1=0 \implies x=1
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -361,11 +361,62 @@ x-1=0 \implies x-1=0 \implies x=1
 [step]
 [TooltipLink dataFor:"derivacie"][h4]8. Vypočítame druhú deriváciu funkcie:[/h4][/TooltipLink]
 
-[equation display:true]
-f^{\prime\prime}(x)=(e^{\frac{1}{x}})^{\prime\prime}=e^{\frac{1}{x}} \cdot (-1) \cdot x-2 \cdot x-1x+e^{\frac{1}{x}} \cdot x-(x-1)x2=
--e^{\frac{1}{x}} \cdot x-1x3+e^{\frac{1}{x}} \cdot x-x+1x2=-e^{\frac{1}{x}} \cdot x-1x3+e^{\frac{1}{x}}x2=
-e^{\frac{1}{x}} \cdot (1x2-x-1x3)=e^{\frac{1}{x}} \cdot x-x+1x3=e^{\frac{1}{x}}x3
-[/equation]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "480px"}`]
+[tbody]
+[tr]
+  [td]
+    [equation className:"text-left" display:true]
+      f^{\prime\prime}(x) \text{ }
+    [/equation]
+  [/td]
+  [td]
+    [equation className:"text-left" display:true]
+      = (e^{\frac{1}{x}})^{\prime\prime}
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = e^{\frac{1}{x}} \cdot (-1) \cdot x^{-2} \cdot \frac{x-1}{x} + e^{\frac{1}{x}} \cdot \frac{x-(x-1)}{x^2}
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = -e^{\frac{1}{x}} \cdot \frac{x-1}{x^3} + e^{\frac{1}{x}} \cdot \frac{x-x+1}{x^2}
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = -e^{\frac{1}{x}} \cdot \frac{x-1}{x^3} + \frac{e^{\frac{1}{x}}}{x^2}
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = e^{\frac{1}{x}} \cdot (\frac{1}{x^2} - \frac{x-1}{x^3})
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = \color{green}{\frac{e^{\frac{1}{x}}}{x^3}}
+    [/equation]
+  [/td]
+[/tr]
+[/tbody]
+[/CustomTable]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
 [ScrollDownIcon /]
@@ -379,7 +430,7 @@ e^{\frac{1}{x}} \cdot (1x2-x-1x3)=e^{\frac{1}{x}} \cdot x-x+1x3=e^{\frac{1}{x}}x
 Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\prime\prime\prime}(x)≠0[/equation] sa nazývajú inflexné body.
 
 [equation display:true]
-e^{\frac{1}{x}}x^3=0 \implies e^{\frac{1}{x}} = 0
+\frac{e^{\frac{1}{x}}}{x^3} = 0 \implies e^{\frac{1}{x}} = 0
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -403,23 +454,52 @@ neklesajúca, nerastúca).
 
 ##### Nutná podmienka pre existenciu lokálneho extrému
 
-Ak funkcia [equation]f[/equation] má v bode  [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
+Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
 
 #### 11. Postačujúca podmienka pre existenciu lokálnych extrémov
 
-Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\geq 0[/equation]  [equation](f'(x)\leq 0, f'(x)>0, f'(x)<0)[/equation] a také pravé okolie čísla [equation]x_0[/equation],
-že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation] [equation](f'(x)\geq 0, f'(x)<0,f'(x)>0)[/equation]. Potom funkcia [equation]f[/equation] má
-v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
+Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\geq 0[/equation]
+
+[equation display:true]
+(f^{\prime}(x) \leq 0, f^{\prime}(x) > 0, f^{\prime}(x) < 0)
+[/equation]
+
+a také pravé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation]
+
+[equation display:true]
+(f^{\prime}(x) \geq 0, f^{\prime}(x) < 0, f^{\prime}(x)>0).
+[/equation]
+
+Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
 
 #### 12. Konvexnosť a konkávnosť funkcie
 
-Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation]  na intervale [equation](a,b)[/equation]. Funkcia [equation]f[/equation] je na
-intervale [equation](a,b)[/equation] konvexná (konkávna) vtedya len vtedy, keď platí [equation]f^{\prime\prime}(x)\geq 0[/equation] [equation](f^{\prime\prime}(x)\leq 0)[/equation],
+Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation] na intervale [equation](a,b)[/equation].
+Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] konvexná (konkávna) vtedy a len vtedy, keď platí:
+
+[equation display:true]f^{\prime\prime}(x)\geq 0[/equation]
+[equation display:true]f^{\prime\prime}(x)\leq 0[/equation]
+
 pre každé [equation]x[/equation] z intervalu [equation](a,b)[/equation].
 
-[div style:`{ textAlign: "center", marginTop: "30px" }`]
-[ScrollDownIcon /]
-[/div]
+#### 13. Inflexný bod
+
+Ak je [equation]x_0[/equation] inflexný bod funkcie [equation]f[/equation], potom
+[equation]f^{\prime\prime}(x_0)=0[/equation] alebo [equation]f^{\prime\prime}(x_0)[/equation] neexistuje.
+[br /]
+
+Nech funkcia [equation]f[/equation] má v pravom a ľavom okolí bodu [equation]x_0[/equation]
+druhú deriváciu [equation]f^{\prime\prime}[/equation] a v bode [equation]x_0[/equation] prvú
+deriváciu [equation]f^{\prime}(x_0)[/equation]. Ak pre všetky [equation]x[/equation] z pravého
+okolia bodu [equation]x_0[/equation] platí
+
+[equation display:true](f^{\prime\prime}(x) > 0, f^{\prime\prime}(x) < 0)[/equation]
+
+a pre všetky [equation]x[/equation] z ľavého okolia bodu [equation]x_0[/equation] platí
+
+[equation display:true](f^{\prime\prime}(x) < 0, f^{\prime\prime}(x) > 0)[/equation]
+
+tak [equation]x_0[/equation] je inflexný bod funkcie [equation]f[/equation].
 
 [/step]
 
