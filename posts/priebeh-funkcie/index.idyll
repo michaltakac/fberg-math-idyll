@@ -1,0 +1,428 @@
+[meta title:"Post 1" description:"Short description of your project" /]
+
+[var name:"step" value:0/]
+
+[div className:"left-container"]
+[section className:"graph-container"]
+
+[PriebehFunkcie
+  step:`step`
+/]
+
+// 1. Zadanie príkladu
+[div style:`{ display: step === 0 ? "block": "none" }`]
+[equation display:true]
+  f(x) = x \cdot e^{\frac{1}{x}}
+[/equation]
+[/div]
+
+// 2. Riešenie
+
+
+[/section]
+[/div]
+
+[section className:"article-body"]
+
+[Scroller currentStep:step className:"scroller-container"]
+
+[step]
+## Priebeh funkcie
+
+Vyšetrite priebeh funkcie [Equation]f[/Equation] a nakreslite jej graf, keď
+
+[equation display:true]
+  f(x) = x \cdot e^{\frac{1}{x}}
+[/equation]
+
+## Riešenie
+### Podmienka
+
+[Equation display:true]
+  x≠0
+[/Equation]
+
+#### 1. Definičný obor funkcie:
+
+[Equation display:true]
+  D(f) = R - {0}
+[/Equation]
+
+[TooltipLink dataFor:"parnostneparnost"][h4]2. Párnosť a nepárnosť funkcie:[/h4][/TooltipLink]
+
+[ReactTooltip id:"parnostneparnost" className:"tooltipWhiteBig"]
+Funkcia je párna, ak platí:
+
+[div style:`{ textAlign: "center" }`]
+[Equation]\forall x \in D(f)[/Equation], [Equation](-x) \in D(f)[/Equation] a [Equation]f(-x)=f(x)[/Equation].
+[/div]
+
+[br/]
+Funkcia je nepárna, ak platí:
+
+[div style:`{ textAlign: "center" }`]
+[Equation]\forall x \in D(f)[/Equation], [Equation](-x) \in D(f)[/Equation] a [Equation]f(-x)=-f(x)[/Equation].
+[/div]
+
+[/ReactTooltip]
+
+
+[Equation display:true]
+f(-x) = -x \cdot e^{\frac{-1}{x}}
+[/Equation]
+[Equation display:true]
+-f(x) = -x \cdot e^{\frac{1}{x}}
+[/Equation]
+
+[div style:`{ color: "green", textAlign: "center" }`]
+Funkcia nie je párna ani nepárna.
+[/div]
+
+[div style:`{ color: "#666666", textAlign: "center", marginTop: "10px" }`]
+[div className:"hand-scroll" style:`{ marginBottom: "5px" }`]Scrollujte nižšie[/div]
+[Hand color:"#666666" /]
+[/div]
+
+[/step]
+
+[step]
+[div id:"sekcia-3"/]
+[TooltipLink dataFor:"priesecniky"][h4]3. Priesečníky so súradnicovými osami[/h4][/TooltipLink]
+
+[ReactTooltip id:"priesecniky" className:"tooltipWhiteBig" style:`{ maxWidth: "400px"}` multiline:true]
+[div]
+Priesečníky s osou [equation]o_x[/equation] sú body, v ktorých funkcia [equation]f[/equation] pretne x-ovú súradnícovú os.
+[br /]
+Tieto body majú súradnice [equation][ x_i , 0 ], i \in \mathbb{N}[/equation].
+[/div]
+
+[br /]
+
+[div]
+Priesečníky s osou [equation]o_x[/equation] zistíme tak, že položíme [equation]f(x)=0[/equation], a z rovnice vypočítame x.
+[br /]
+Priesečník s osou [equation]o_y[/equation] je nanajvýš jediný bod, v ktorom funkcia pretne y-ovú súradnicovú os.
+[br /]
+Jeho súradnice vypočítame tak, že v predpise funkcie položíme [equation]x=0[/equation] a vyjadríme [equation]f(x)[/equation].
+[/div]
+[/ReactTooltip]
+
+[div style:`{ textAlign: "center"}`]
+[equation]x=0 \implies [/equation] [span style:`{ fontStyle: "italic", color: "green" }`]Nie je definovaná.[/span]
+[/div]
+[br /]
+
+[div style:`{ textAlign: "center"}`]
+[equation]f(x)=0 \implies 0=x \cdot e^{\frac{1}{x}} \implies x=0 \implies[/equation] [span style:`{ fontStyle: "italic", color: "green" }`]Nie je definovaná.[/span]
+[/div]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+[div id:"sekcia-4"/]
+#### 4. Limity funkcie v koncových bodoch definičného oboru v bodoch nespojitosti:
+
+Zistíme, ako sa funkcia správa v koncových bodoch definičného oboru. Vypočítame limity:
+
+[equation display:true]
+\lim_{x \to ∞} = (x \cdot e^{\frac{1}{x}}) = ∞
+[/equation]
+[equation display:true]
+\lim_{x \to -∞} = (x \cdot e^{\frac{1}{x}}) = -∞
+[/equation]
+
+V bodoch nespojitosti vypočítame jednostranné limity. Ak aspoň jednostranná limita je nevlastné číslo, tak priamka [equation]x=a[/equation] (kde a je bod nespojitosti) je asymptota bez smernice.
+
+[equation display:true]
+\lim_{x→0^+} = (x \cdot e^{\frac{1}{x}}) = ∞
+[/equation]
+[equation display:true]
+\lim_{x→0^-} = (x \cdot e^{\frac{1}{x}}) = 0
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+[div id:"sekcia-5"/]
+#### 5. Asymptoty so smernicou:
+
+Asymptoty so smernicou sú priamky [equation]y=k_1 x+q_1[/equation] a [equation]y=k_2 x+q_2[/equation], ktorých koeficienty vypočítame nasledovne:
+
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+  [tbody]
+    [tr]
+      [td]
+        [equation className:"text-left" display:true]
+          k_1 = \lim_{x \to ∞} \frac{f(x)}{x}
+        [/equation]
+      [/td]
+    [/tr]
+    [tr]
+      [td]
+        [equation display:true]
+          q_1 = \lim_{x \to ∞} (f(x) - k_1 \cdot x)
+        [/equation]
+      [/td]
+    [/tr]
+    [tr]
+      [td]
+        [equation display:true]
+          k_2 = \lim_{x \to -∞} \frac{f(x)}{x}
+        [/equation]
+      [/td]
+    [/tr]
+    [tr]
+      [td]
+        [equation display:true]
+          q_2 = \lim_{x \to -∞} (f(x) - k_2 \cdot x)
+        [/equation]
+      [/td]
+    [/tr]
+  [/tbody]
+[/CustomTable]
+
+Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné čísla.
+
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+[tbody]
+[tr]
+  [td]
+    [equation className:"text-left" display:true]k_1 = \lim_{x \to ∞} \frac{(x \cdot e^{\frac{1}{x}})}{x} = \lim_{x \to ∞} e^{\frac{1}{x}} = 1[/equation]
+  [/td]
+[/tr]
+[/tbody]
+[/CustomTable]
+
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+[tbody]
+[tr]
+  [td]
+    [equation className:"text-left" display:true]q_1 = \lim_{x \to ∞} (x \cdot e^{\frac{1}{x}} - 1 \cdot x)[/equation]
+  [/td]
+[/tr]
+[tr]
+  [td]
+    [equation display:true]q_1 = \lim_{x \to ∞} x (e^{\frac{1}{x}} - 1)[/equation]
+  [/td]
+[/tr]
+[tr]
+  [td]
+    [equation display:true]q_1 = \lim_{x \to ∞} \frac{e^{\frac{1}{x} - 1}}{\frac{1}{x}}[/equation]
+  [/td]
+[/tr]
+[tr]
+  [td]
+    [equation display:true]q_1 \stackrel{L'H}{=} \lim_{x \to ∞} \frac{e^{\frac{1}{x}} \cdot (-1 \cdot x^{-2})}{-1 \cdot x^{-2}}[/equation]
+  [/td]
+[/tr]
+[tr]
+  [td]
+    [equation display:true]q_1 = \lim_{x \to ∞} e^{\frac{1}{x}}[/equation]
+  [/td]
+[/tr]
+[tr]
+  [td]
+    [equation display:true]q_1 = 1[/equation]
+  [/td]
+[/tr]
+[/tbody]
+[/CustomTable]
+
+[equation display:true]
+y=x+1
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+[div id:"sekcia-6"/]
+[TooltipLink dataFor:"derivacie"][h4]6. Vypočítame prvú deriváciu funkcie:[/h4][/TooltipLink]
+
+[ReactTooltip id:"derivacie" className:"tooltipWhiteBig"]
+
+Derivácia súčinu (prvá a druhá derivácia)
+
+[equation display:true]
+[f(x)\cdot g(x)]^{\prime}=f^{\prime}(x)\cdot g(x)+f(x)\cdot g^{\prime}(x)
+[/equation]
+
+Derivácia podielu (druhá derivácia)
+
+[equation display:true]
+\left[\frac{f(x)}{g(x)}\right]^{\prime}=\frac{f^{\prime}(x)\cdot g(x)-f(x)\cdot g^{\prime}(x)}{g(x)^2}\text{,\quad ak } g(x)\ne 0
+[/equation]
+
+Derivácia zloženej funkcie (prvá a druhá derivácia)
+
+[equation display:true]
+[g(f(x))]^{\prime}=g^{\prime}(f(x))f^{\prime}(x)
+[/equation]
+
+[/ReactTooltip]
+
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "350px"}`]
+[tbody]
+[tr]
+  [td]
+    [equation className:"text-left" display:true]
+      f^{\prime}(x) \text{ }
+    [/equation]
+  [/td]
+  [td]
+    [equation className:"text-left" display:true]
+      = (x \cdot e^{\frac{1}{x}})^{\prime}
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = 1 \cdot e^{\frac{1}{x}}+x \cdot e^{\frac{1}{x}} \cdot (-1) \cdot x - 2
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = e^{\frac{1}{x}}-x \cdot e^{\frac{1}{x}}x x
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = e^{\frac{1}{x}}-e^{\frac{1}{x}}x
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = x \cdot e^{\frac{1}{x}}-e^{\frac{1}{x}}x
+    [/equation]
+  [/td]
+[/tr]
+[tr]
+  [td][/td]
+  [td]
+    [equation display:true]
+      = e^{\frac{1}{x}} \cdot (x-1)x
+    [/equation]
+  [/td]
+[/tr]
+[/tbody]
+[/CustomTable]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+[div id:"sekcia-7"/]
+7. Stacionárne body:
+
+Stacinárne body sú body z definičného oboru spojitej funkcie [equation]f[/equation], v ktorých
+je [equation]f^{\prime}(x)=0[/equation] alebo [equation]f^{\prime}[/equation] neexistuje.
+
+[equation display:true]
+e^{\frac{1}{x}} \cdot (x-1) = 0 \implies e^{\frac{1}{x}} = 0
+[/equation]
+
+alebo
+
+[equation display:true]
+x-1=0 \implies x-1=0 \implies x=1
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+[TooltipLink dataFor:"derivacie"][h4]8. Vypočítame druhú deriváciu funkcie:[/h4][/TooltipLink]
+
+[equation display:true]
+f^{\prime\prime}(x)=(e^{\frac{1}{x}})^{\prime\prime}=e^{\frac{1}{x}} \cdot (-1) \cdot x-2 \cdot x-1x+e^{\frac{1}{x}} \cdot x-(x-1)x2=
+-e^{\frac{1}{x}} \cdot x-1x3+e^{\frac{1}{x}} \cdot x-x+1x2=-e^{\frac{1}{x}} \cdot x-1x3+e^{\frac{1}{x}}x2=
+e^{\frac{1}{x}} \cdot (1x2-x-1x3)=e^{\frac{1}{x}} \cdot x-x+1x3=e^{\frac{1}{x}}x3
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+#### 9. Inflexné body:
+
+Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\prime\prime\prime}(x)≠0[/equation] sa nazývajú inflexné body.
+
+[equation display:true]
+e^{\frac{1}{x}}x^3=0 \implies e^{\frac{1}{x}} = 0
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+#### 10. Monotónnosť funkcie
+
+Nech funkcia [equation]f[/equation] je spojitá na intervale [equation](a,b)[/equation] a nech vo vnútri
+tohto intervalu existuje [equation]f^{\prime}[/equation]. Ak pre každé [equation]x \in (a,b)[/equation] je
+
+[equation display:true]
+(f^{\prime}(x) > 0 \text{     },f^{\prime}(x)<0, f^{\prime}(x)\geq 0, f^{\prime}(x)\leq 0),
+[/equation]
+
+funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] rastúca (klesajúca,
+neklesajúca, nerastúca).
+
+##### Nutná podmienka pre existenciu lokálneho extrému
+
+Ak funkcia [equation]f[/equation] má v bode  [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
+
+#### 11. Postačujúca podmienka pre existenciu lokálnych extrémov
+
+Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\geq 0[/equation]  [equation](f'(x)\leq 0, f'(x)>0, f'(x)<0)[/equation] a také pravé okolie čísla [equation]x_0[/equation],
+že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation] [equation](f'(x)\geq 0, f'(x)<0,f'(x)>0)[/equation]. Potom funkcia [equation]f[/equation] má
+v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
+
+#### 12. Konvexnosť a konkávnosť funkcie
+
+Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation]  na intervale [equation](a,b)[/equation]. Funkcia [equation]f[/equation] je na
+intervale [equation](a,b)[/equation] konvexná (konkávna) vtedya len vtedy, keď platí [equation]f^{\prime\prime}(x)\geq 0[/equation] [equation](f^{\prime\prime}(x)\leq 0)[/equation],
+pre každé [equation]x[/equation] z intervalu [equation](a,b)[/equation].
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[/Scroller]
+
+[/section]

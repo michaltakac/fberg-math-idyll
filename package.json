@@ -1,0 +1,25 @@
+{
+  "name": "fberg-math",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts" :{
+    "build": "node compile.js"
+  },
+  "idyll": {
+    "theme": "default",
+    "layout": "centered",
+    "css": "styles.css",
+    "authorView": false,
+    "output": "docs/",
+    "compiler": {
+      "postProcessors": []
+    }
+  },
+  "dependencies": {
+    "d3": "^3.5.17",
+    "idyll": "^4.4.0",
+    "idyll-d3-component": "^2.0.0",
+    "idyll-function-plot": "^1.0.0",
+    "mathjs": "^6.0.3"
+  }
+}

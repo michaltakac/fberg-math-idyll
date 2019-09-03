@@ -1,0 +1,49 @@
+[meta title:"Fberg Math" description:"Short description of your project" /]
+
+[Header
+  fullWidth:true
+  title:"Math with D3"
+  subtitle:"Testing idyll-function-plot package"
+  author:"Michal Takac"
+  authorLink:"https://idyll-lang.org"
+  date:`(new Date()).toDateString()`
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+[var name:"exp" value:2 /]
+[var name:"derivative" value:"2 * x" /]
+[var name:"derivativeTex" value:"2 \cdot x" /]
+[Graph exp:exp derivative:derivative derivativeTex:derivativeTex /]
+
+[var name:"exp" value:2 /]
+[div style:`{textAlign: "center"}`] x^[dynamic value:exp interval:1 min:-20 max:20 /] [/div]
+[Equation display:true latex:`"y = \\int x^{" + exp + "} dx"` /]
+//[Equation display:true latex:`"y = \\int x^{__idyll([dynamic value:exp interval:1 min:-20 max:20 /])} dx"` /]
+
+Derivative: [Equation latex:derivativeTex display:true /]
+
+[var name:"x" value:2 /]
+[var name:"y" value:1 /]
+[Vectors x:x y:y /]
+
+[Matrix2D x:x y:y /]
+
+[dynamic value:x min:-10 max:10 interval:0.1 /]
+
+[dynamic value:y min:-10 max:10 interval:0.1 /]
+
+
+
+
+
+Inline equation [$ y = x^{\frac{\pi}{\color{blue}{2}}} $], or centered: [$$ y = 0 $$]
+
+Or with some whitespaces for nicer formatting:
+
+[$$
+  y = \int x^{\color{red}{2}} dx
+$$]
+
+[$$ \color{#c7c7c7}{R} + \color{green}{G} + \color{blue}{B} $$]
+
