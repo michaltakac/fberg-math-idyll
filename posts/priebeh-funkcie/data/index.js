@@ -184,6 +184,7 @@ module.exports = [
         fnType: "points",
         graphType: "scatter",
         title: "f(x)",
+        color: "orange",
         attr: {
           "stroke-width": 10
         }

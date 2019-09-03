@@ -237,7 +237,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 [/CustomTable]
 
 [equation display:true]
-\color{red}{y=x+1}
+\color{#ff00aa}{y=x+1}
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -322,7 +322,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = \color{green}{\frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
+      = \color{red}{\frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
     [/equation]
   [/td]
 [/tr]
@@ -349,7 +349,7 @@ e^{\frac{1}{x}} \cdot (x-1) = 0 \implies e^{\frac{1}{x}} = 0
 alebo
 
 [equation display:true]
-x-1=0 \implies x=1
+x-1=0 \implies \color{orange}{x=1}
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -497,7 +497,7 @@ okolia bodu [equation]x_0[/equation] platí
 
 a pre všetky [equation]x[/equation] z ľavého okolia bodu [equation]x_0[/equation] platí
 
-[equation display:true](f^{\prime\prime}(x) < 0, f^{\prime\prime}(x) > 0)[/equation]
+[equation display:true](f^{\prime\prime}(x) \lt 0, f^{\prime\prime}(x) \gt 0)[/equation]
 
 tak [equation]x_0[/equation] je inflexný bod funkcie [equation]f[/equation].
 

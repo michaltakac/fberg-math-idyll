@@ -32,10 +32,7 @@ class PriebehFunkcie extends D3Component {
   update(props, oldProps) {
     document.getElementById("quadratic").innerHTML = "";
     instance = null;
-    console.log(instance);
-    console.log("terajsi step:", props.step);
-    console.log("starsi step:", oldProps.step);
-    console.log(props);
+
     const step = props.step;
     const d = data[step || 0];
     if (props.step !== oldProps.step && d.plotSettings) {
@@ -67,7 +64,6 @@ class PriebehFunkcie extends D3Component {
       if (d.animation) {
         instance.programmaticZoom(d.animation.zoom.xDomain, d.animation.zoom.yDomain);
       }
-      // instance.drawGraphWrapper()
     }
   }
 }
