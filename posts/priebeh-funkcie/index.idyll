@@ -337,7 +337,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
 
 [step]
 [div id:"sekcia-7"/]
-### 7. Stacionárne body:
+#### 7. Stacionárne body:
 
 Stacinárne body sú body z definičného oboru spojitej funkcie [equation]f[/equation], v ktorých
 je [equation]f^{\prime}(x)=0[/equation] alebo [equation]f^{\prime}[/equation] neexistuje.
