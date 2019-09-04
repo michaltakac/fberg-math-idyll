@@ -1,5 +1,6 @@
 module.exports = [
   {
+    step: 1,
     plotSettings: {},
     plotData: [
       {
@@ -15,11 +16,9 @@ module.exports = [
         skipTip: true,
       },
     ],
-    animation: {
-      zoom: {
-        xDomain: [-20, 20],
-        yDomain: [-20, 20],
-      },
+    zoom: {
+      xDomain: [-20, 20],
+      yDomain: [-20, 20],
     },
   },
   {
@@ -38,11 +37,9 @@ module.exports = [
         skipTip: true,
       },
     ],
-    animation: {
-      zoom: {
-        xDomain: [-10, 10],
-        yDomain: [-10, 10],
-      },
+    zoom: {
+      xDomain: [-10, 10],
+      yDomain: [-10, 10],
     },
   },
   {
@@ -58,20 +55,39 @@ module.exports = [
     plotData: [
       {
         fn: "x * exp(1/x)",
-        range: [0.00001, 500],
+        range: [0.001, 500],
         color: "blue",
       },
       {
         fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
+        range: [-500, -0.001],
         color: "blue",
       },
     ],
+    zoom: {
+      xDomain: [-50, 50],
+      yDomain: [-50, 50],
+    },
     animation: {
-      zoom: {
-        xDomain: [-5, 5],
-        yDomain: [-5, 5],
-      },
+      type: "loop",
+      steps: [
+        {
+          duration: 2000,
+          delay: 2000,
+          zoom: {
+            xDomain: [-50, 50],
+            yDomain: [-50, 50],
+          },
+        },
+        {
+          duration: 2000,
+          delay: 2000,
+          zoom: {
+            xDomain: [-2, 2],
+            yDomain: [-50, 50],
+          },
+        },
+      ],
     },
   },
   // 4
@@ -104,11 +120,9 @@ module.exports = [
         },
       },
     ],
-    animation: {
-      zoom: {
-        xDomain: [-10, 10],
-        yDomain: [-10, 10],
-      },
+    zoom: {
+      xDomain: [-10, 10],
+      yDomain: [-10, 10],
     },
   },
   // 5
@@ -139,15 +153,20 @@ module.exports = [
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
+        range: [-500, -0.00001],
+        graphType: "interval",
+        color: "red",
+      },
+      {
+        fn: "(exp(1/x) * (x - 1)) / x",
+        range: [0.00001, 500],
         graphType: "interval",
         color: "red",
       },
     ],
-    animation: {
-      zoom: {
-        xDomain: [-10, 10],
-        yDomain: [-10, 10],
-      },
+    zoom: {
+      xDomain: [-10, 10],
+      yDomain: [-10, 10],
     },
   },
   {
@@ -173,130 +192,208 @@ module.exports = [
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
+        range: [-500, -0.00001],
         graphType: "interval",
         color: "red",
       },
       {
-        points: [
-          [1, 0],
-          [1, 0],
-        ],
+        fn: "(exp(1/x) * (x - 1)) / x",
+        range: [0.00001, 500],
+        graphType: "interval",
+        color: "red",
+      },
+      {
+        points: [[1, 0], [1, 0]],
         fnType: "points",
         graphType: "scatter",
         title: "f(x)",
         color: "orange",
         attr: {
-          "stroke-width": 10
+          "stroke-width": 10,
+        },
+      },
+    ],
+    zoom: {
+      xDomain: [-10, 10],
+      yDomain: [-10, 10],
+    },
+  },
+  {
+    plotSettings: {
+      tip: {
+        xLine: true,
+        yLine: true,
+        render: () => "f'(x)",
+      },
+    },
+    plotData: [
+      {
+        fn: "x * exp(1/x)",
+        range: [0.00001, 500],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "x * exp(1/x)",
+        range: [-500, -0.00001],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "(exp(1/x) * (x - 1)) / x",
+        range: [-500, -0.00001],
+        graphType: "interval",
+        color: "red",
+      },
+      {
+        fn: "(exp(1/x) * (x - 1)) / x",
+        range: [0.00001, 500],
+        graphType: "interval",
+        color: "red",
+      },
+      {
+        points: [[1, 0], [1, 0]],
+        fnType: "points",
+        graphType: "scatter",
+        title: "f(x)",
+        color: "orange",
+        attr: {
+          "stroke-width": 10,
+        },
+      },
+    ],
+    zoom: {
+      xDomain: [-10, 10],
+      yDomain: [-10, 10],
+    },
+  },
+  {
+    plotSettings: {
+      tip: {
+        xLine: true,
+        yLine: true,
+        render: () => `f"(x)`,
+      },
+    },
+    plotData: [
+      {
+        fn: "x * exp(1/x)",
+        range: [0.00001, 500],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "x * exp(1/x)",
+        range: [-500, -0.00001],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [-500, -0.001],
+        graphType: "polyline",
+        color: "green",
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [0.001, 500],
+        graphType: "polyline",
+        color: "green",
+      },
+    ],
+    zoom: {
+      xDomain: [-4, 4],
+      yDomain: [-4, 4],
+    },
+  },
+  {
+    plotSettings: {
+      tip: {
+        xLine: true,
+        yLine: true,
+        render: () => `f"(x)`,
+      },
+    },
+    plotData: [
+      {
+        fn: "x * exp(1/x)",
+        range: [0.00001, 500],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "x * exp(1/x)",
+        range: [-500, -0.00001],
+        color: "blue",
+        skipTip: true,
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [-500, -0.001],
+        graphType: "polyline",
+        color: "green",
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [0.001, 500],
+        graphType: "polyline",
+        color: "green",
+      },
+    ],
+    zoom: {
+      xDomain: [-6, 6],
+      yDomain: [-6, 6],
+    },
+  },
+  {
+    plotSettings: {
+      tip: {
+        xLine: true,
+        yLine: true,
+        render: () => `f"(x)`,
+      },
+    },
+    plotData: [
+      {
+        fn: "x * exp(1/x)",
+        range: [0.00001, 500],
+        color: "blue",
+        skipTip: true,
+        attr: {
+          "stroke-width": 0.5
+        }
+      },
+      {
+        fn: "x * exp(1/x)",
+        range: [-500, -0.00001],
+        color: "blue",
+        skipTip: true,
+        attr: {
+          "stroke-width": 0.5
+        }
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [-500, -0.001],
+        graphType: "polyline",
+        color: "#94a24e",
+        attr: {
+          "stroke-width": 3
+        }
+      },
+      {
+        fn: "(exp(1/x) / x^3)",
+        range: [0.001, 500],
+        graphType: "polyline",
+        color: "#c0cb89",
+        attr: {
+          "stroke-width": 3
         }
       },
     ],
-    animation: {
-      zoom: {
-        xDomain: [-10, 10],
-        yDomain: [-10, 10],
-      },
-    },
-  },
-  {
-    plotSettings: {
-      tip: {
-        xLine: true,
-        yLine: true,
-        render: () => `f"(x)`,
-      },
-    },
-    plotData: [
-      {
-        fn: "x * exp(1/x)",
-        range: [0.00001, 500],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "exp(1/x) / x^3",
-        graphType: "interval",
-        color: "green",
-      }
-    ],
-    animation: {
-      zoom: {
-        xDomain: [-4, 4],
-        yDomain: [-4, 4],
-      },
-    },
-  },
-  {
-    plotSettings: {
-      tip: {
-        xLine: true,
-        yLine: true,
-        render: () => `f"(x)`,
-      },
-    },
-    plotData: [
-      {
-        fn: "x * exp(1/x)",
-        range: [0.00001, 500],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "exp(1/x) / x^3",
-        graphType: "interval",
-        color: "green",
-      }
-    ],
-    animation: {
-      zoom: {
-        xDomain: [-6, 6],
-        yDomain: [-6, 6],
-      },
-    },
-  },
-  {
-    plotSettings: {
-      tip: {
-        xLine: true,
-        yLine: true,
-        render: () => `f"(x)`,
-      },
-    },
-    plotData: [
-      {
-        fn: "x * exp(1/x)",
-        range: [0.00001, 500],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "exp(1/x) / x^3",
-        graphType: "interval",
-        color: "green",
-      }
-    ],
-    animation: {
-      zoom: {
-        xDomain: [-6, 6],
-        yDomain: [-6, 6],
-      },
+    zoom: {
+      xDomain: [-6, 6],
+      yDomain: [-6, 6],
     },
   },
 ];

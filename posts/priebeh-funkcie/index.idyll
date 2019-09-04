@@ -205,32 +205,54 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 [tbody]
 [tr]
   [td]
-    [equation className:"text-left" display:true]q_1 = \lim_{x \to ∞} (x \cdot e^{\frac{1}{x}} - 1 \cdot x)[/equation]
+    [equation className:"text-left" display:true]
+      q_1 \text{ }
+    [/equation]
+  [/td]
+  [td]
+    [equation className:"text-left" display:true]
+      = \lim_{x \to ∞} (x \cdot e^{\frac{1}{x}} - 1 \cdot x)
+    [/equation]
   [/td]
 [/tr]
 [tr]
+  [td][/td]
   [td]
-    [equation display:true]q_1 = \lim_{x \to ∞} x (e^{\frac{1}{x}} - 1)[/equation]
+    [equation display:true]
+      = \lim_{x \to ∞} x (e^{\frac{1}{x}} - 1)
+    [/equation]
   [/td]
 [/tr]
 [tr]
+  [td][/td]
   [td]
-    [equation display:true]q_1 = \lim_{x \to ∞} \frac{e^{\frac{1}{x} - 1}}{\frac{1}{x}}[/equation]
+    [equation display:true]
+      = \lim_{x \to ∞} \frac{e^{\frac{1}{x} - 1}}{\frac{1}{x}}
+    [/equation]
   [/td]
 [/tr]
 [tr]
+  [td][/td]
   [td]
-    [equation display:true]q_1 \stackrel{L'H}{=} \lim_{x \to ∞} \frac{e^{\frac{1}{x}} \cdot (-1 \cdot x^{-2})}{-1 \cdot x^{-2}}[/equation]
+    [equation display:true]
+      \stackrel{L'H}{=} \lim_{x \to ∞} \frac{e^{\frac{1}{x}} \cdot (-1 \cdot x^{-2})}{-1 \cdot x^{-2}}
+    [/equation]
   [/td]
 [/tr]
 [tr]
+  [td][/td]
   [td]
-    [equation display:true]q_1 = \lim_{x \to ∞} e^{\frac{1}{x}}[/equation]
+    [equation display:true]
+      = \lim_{x \to ∞} e^{\frac{1}{x}}
+    [/equation]
   [/td]
 [/tr]
 [tr]
+  [td][/td]
   [td]
-    [equation display:true]q_1 = 1[/equation]
+    [equation display:true]
+      = 1
+    [/equation]
   [/td]
 [/tr]
 [/tbody]
@@ -277,7 +299,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
 [tr]
   [td]
     [equation className:"text-left" display:true]
-      f^{\prime}(x) \text{ }
+      \color{red}{f^{\prime}(x) \text{ }}
     [/equation]
   [/td]
   [td]
@@ -322,7 +344,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = \color{red}{\frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
+      \color{red}{= \frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
     [/equation]
   [/td]
 [/tr]
@@ -343,13 +365,7 @@ Stacinárne body sú body z definičného oboru spojitej funkcie [equation]f[/eq
 je [equation]f^{\prime}(x)=0[/equation] alebo [equation]f^{\prime}[/equation] neexistuje.
 
 [equation display:true]
-e^{\frac{1}{x}} \cdot (x-1) = 0 \implies e^{\frac{1}{x}} = 0
-[/equation]
-
-alebo
-
-[equation display:true]
-x-1=0 \implies \color{orange}{x=1}
+e^{\frac{1}{x}} \cdot (x-1) = 0 \implies \color{orange}{x=1}
 [/equation]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -359,19 +375,54 @@ x-1=0 \implies \color{orange}{x=1}
 [/step]
 
 [step]
-[TooltipLink dataFor:"derivacie"][h4]8. Vypočítame druhú deriváciu funkcie:[/h4][/TooltipLink]
+
+#### 8. Monotónnosť funkcie
+
+Nech funkcia [equation]f[/equation] je spojitá na intervale [equation](a,b)[/equation] a nech vo vnútri
+tohto intervalu existuje [equation]f^{\prime}[/equation]. Ak pre každé [equation]x \in (a,b)[/equation] je
+
+[equation display:true]
+f^{\prime}(x) > 0 \text{     } (f^{\prime}(x)<0),
+[/equation]
+
+funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] rastúca (klesajúca).
+
+##### Nutná podmienka pre existenciu lokálneho extrému
+
+Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
+
+#### 9. Postačujúca podmienka pre existenciu lokálnych extrémov
+
+Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x) > 0[/equation]
+
+[equation display:true]
+(f^{\prime}(x) \leq 0, f^{\prime}(x) > 0, f^{\prime}(x) < 0)
+[/equation]
+
+a také pravé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation]
+
+[equation display:true]
+(f^{\prime}(x) \geq 0, f^{\prime}(x) < 0, f^{\prime}(x)>0).
+[/equation]
+
+Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
+
+[/step]
+
+[step]
+[TooltipLink dataFor:"derivacie"][h4]10. Vypočítame druhú deriváciu funkcie:[/h4][/TooltipLink]
 
 [CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "480px"}`]
 [tbody]
 [tr]
   [td]
     [equation className:"text-left" display:true]
-      f^{\prime\prime}(x) \text{ }
+      \color{green}{f^{\prime\prime}(x) \text{ }}
     [/equation]
   [/td]
   [td]
     [equation className:"text-left" display:true]
-      = (e^{\frac{1}{x}})^{\prime\prime}
+      = (x \cdot e^{\frac{1}{x}})^{\prime\prime}
     [/equation]
   [/td]
 [/tr]
@@ -411,7 +462,7 @@ x-1=0 \implies \color{orange}{x=1}
   [td][/td]
   [td]
     [equation display:true]
-      = \color{green}{\frac{e^{\frac{1}{x}}}{x^3}}
+      \color{green}{= \frac{e^{\frac{1}{x}}}{x^3}}
     [/equation]
   [/td]
 [/tr]
@@ -425,71 +476,18 @@ x-1=0 \implies \color{orange}{x=1}
 [/step]
 
 [step]
-#### 9. Inflexné body:
+[TooltipLink dataFor:"inflexnybod"][h4]11. Inflexné body:[/h4][/TooltipLink]
 
-Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\prime\prime\prime}(x)≠0[/equation] sa nazývajú inflexné body.
-
-[equation display:true]
-\frac{e^{\frac{1}{x}}}{x^3} = 0 \implies e^{\frac{1}{x}} = 0
-[/equation]
-
-[div style:`{ textAlign: "center", marginTop: "30px" }`]
-[ScrollDownIcon /]
-[/div]
-
-[/step]
-
-[step]
-#### 10. Monotónnosť funkcie
-
-Nech funkcia [equation]f[/equation] je spojitá na intervale [equation](a,b)[/equation] a nech vo vnútri
-tohto intervalu existuje [equation]f^{\prime}[/equation]. Ak pre každé [equation]x \in (a,b)[/equation] je
-
-[equation display:true]
-(f^{\prime}(x) > 0 \text{     },f^{\prime}(x)<0, f^{\prime}(x)\geq 0, f^{\prime}(x)\leq 0),
-[/equation]
-
-funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] rastúca (klesajúca,
-neklesajúca, nerastúca).
-
-##### Nutná podmienka pre existenciu lokálneho extrému
-
-Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
-
-#### 11. Postačujúca podmienka pre existenciu lokálnych extrémov
-
-Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\geq 0[/equation]
-
-[equation display:true]
-(f^{\prime}(x) \leq 0, f^{\prime}(x) > 0, f^{\prime}(x) < 0)
-[/equation]
-
-a také pravé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation]
-
-[equation display:true]
-(f^{\prime}(x) \geq 0, f^{\prime}(x) < 0, f^{\prime}(x)>0).
-[/equation]
-
-Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
-
-#### 12. Konvexnosť a konkávnosť funkcie
-
-Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation] na intervale [equation](a,b)[/equation].
-Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] konvexná (konkávna) vtedy a len vtedy, keď platí:
-
-[equation display:true]f^{\prime\prime}(x)\geq 0[/equation]
-[equation display:true]f^{\prime\prime}(x)\leq 0[/equation]
-
-pre každé [equation]x[/equation] z intervalu [equation](a,b)[/equation].
-
-#### 13. Inflexný bod
+[ReactTooltip id:"inflexnybod" className:"tooltipWhiteBig"]
 
 Ak je [equation]x_0[/equation] inflexný bod funkcie [equation]f[/equation], potom
 [equation]f^{\prime\prime}(x_0)=0[/equation] alebo [equation]f^{\prime\prime}(x_0)[/equation] neexistuje.
 [br /]
 
 Nech funkcia [equation]f[/equation] má v pravom a ľavom okolí bodu [equation]x_0[/equation]
-druhú deriváciu [equation]f^{\prime\prime}[/equation] a v bode [equation]x_0[/equation] prvú
+druhú deriváciu [equation]f^{\prime\prime}[/equation] a v bode
+[br /]
+[equation]x_0[/equation] prvú
 deriváciu [equation]f^{\prime}(x_0)[/equation]. Ak pre všetky [equation]x[/equation] z pravého
 okolia bodu [equation]x_0[/equation] platí
 
@@ -500,6 +498,32 @@ a pre všetky [equation]x[/equation] z ľavého okolia bodu [equation]x_0[/equat
 [equation display:true](f^{\prime\prime}(x) \lt 0, f^{\prime\prime}(x) \gt 0)[/equation]
 
 tak [equation]x_0[/equation] je inflexný bod funkcie [equation]f[/equation].
+
+[/ReactTooltip]
+
+Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\prime\prime\prime}(x)≠0[/equation] sa nazývajú inflexné body.
+
+[equation display:true]
+\frac{e^{\frac{1}{x}}}{x^3} ≠ 0 \implies e^{\frac{1}{x}} ≠ 0
+[/equation]
+
+[div style:`{ textAlign: "center", marginTop: "30px" }`]
+[ScrollDownIcon /]
+[/div]
+
+[/step]
+
+[step]
+
+#### 12. Konvexnosť a konkávnosť funkcie
+
+Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation] na intervale [equation](a,b)[/equation].
+Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] konvexná (konkávna) vtedy a len vtedy, keď platí:
+
+[equation display:true]\color{#94a24e}{f^{\prime\prime}(x)\geq 0}[/equation]
+[equation display:true]\color{#c0cb89}{f^{\prime\prime}(x)\leq 0}[/equation]
+
+pre každé [equation]x[/equation] z intervalu [equation](a,b)[/equation].
 
 [/step]
 
