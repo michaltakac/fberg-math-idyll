@@ -180,74 +180,37 @@ module.exports = [
     plotData: [
       {
         fn: "x * exp(1/x)",
-        range: [0.00001, 500],
+        range: [-500, -0.001],
         color: "blue",
         skipTip: true,
       },
       {
         fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
-        color: "blue",
-        skipTip: true,
-      },
-      {
-        fn: "(exp(1/x) * (x - 1)) / x",
-        range: [-500, -0.00001],
-        graphType: "interval",
-        color: "#950028",
-      },
-      {
-        fn: "(exp(1/x) * (x - 1)) / x",
-        range: [0.00001, 500],
-        graphType: "interval",
-        color: "#950028",
-      },
-      {
-        points: [[1, 0], [1, 0]],
-        fnType: "points",
-        graphType: "scatter",
-        title: "f(x)",
-        color: "orange",
-        attr: {
-          "stroke-width": 10,
-        },
-      },
-    ],
-    zoom: {
-      xDomain: [-10, 10],
-      yDomain: [-10, 10],
-    },
-  },
-  {
-    plotSettings: {
-      tip: {
-        xLine: true,
-        yLine: true,
-        render: () => "f'(x)",
-      },
-    },
-    plotData: [
-      {
-        fn: "x * exp(1/x)",
-        range: [0.00001, 500],
+        range: [0.001, 1],
         color: "blue",
         skipTip: true,
       },
       {
         fn: "x * exp(1/x)",
-        range: [-500, -0.00001],
+        range: [1, 500],
         color: "blue",
         skipTip: true,
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
-        range: [-500, -0.00001],
+        range: [-500, -0.001],
         graphType: "interval",
         color: "#950028",
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
-        range: [0.00001, 500],
+        range: [0.001, 1],
+        graphType: "interval",
+        color: "#950028",
+      },
+      {
+        fn: "(exp(1/x) * (x - 1)) / x",
+        range: [1, 500],
         graphType: "interval",
         color: "#950028",
       },

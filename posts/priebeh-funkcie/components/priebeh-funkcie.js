@@ -70,29 +70,57 @@ class PriebehFunkcie extends D3Component {
       }
 
       if (d.animation) {
-        const anim = Observable.create(obs => {
-          obs.next(d.animation.steps);
-          obs.complete();
-        }).pipe(
-          delay(d.animation.delay || 0),
-          tap(step => console.log("starting animation step ", step, props.step2animstate)),
-          mergeMap(x => from(x)),
-          concatMap(step => of(step).pipe(delay(step.delay || 0))),
-          repeat(10),
-          takeWhile(_ => lastStep !== props.step)
-        );
-        anim.subscribe(step => instance.programmaticZoom(step.zoom.xDomain, step.zoom.yDomain));
+        // const anim = Observable.create(obs => {
+        //   obs.next(d.animation.steps);
+        //   obs.complete();
+        // }).pipe(
+        //   delay(d.animation.delay || 0),
+        //   tap(step => console.log("starting animation step ", step, props.step2animstate)),
+        //   mergeMap(x => from(x)),
+        //   concatMap(step => of(step).pipe(delay(step.delay || 0))),
+        //   repeat(10),
+        //   takeWhile(_ => lastStep !== props.step)
+        // );
+        // anim.subscribe(step => instance.programmaticZoom(step.zoom.xDomain, step.zoom.yDomain));
       }
     }
 
     // Custom triggers, todo: modularize
-    if (step === 9) {
+    if (step === 5) {
+      instance.options.data[0].attr = {
+        "stroke-width": props.highlight === "step-5_top-eq" ? 3 : 1,
+      };
+
+      instance.options.data[1].attr = {
+        "stroke-width": props.highlight === "step-5_bottom-eq" ? 3 : 1,
+      };
+
       instance.options.data[2].attr = {
-        "stroke-width": props.highlight === "step-9_left-eq" ? 3 : 1,
+        "stroke-width": props.highlight === "step-5_top-eq" ? 3 : 1,
       };
 
       instance.options.data[3].attr = {
-        "stroke-width": props.highlight === "step-9_right-eq" ? 3 : 1,
+        "stroke-width": props.highlight === "step-5_top-eq" ? 3 : 1,
+      };
+
+      instance.options.data[4].attr = {
+        "stroke-width": props.highlight === "step-5_bottom-eq" ? 3 : 1,
+      };
+
+      instance.options.data[5].attr = {
+        "stroke-width": props.highlight === "step-5_top-eq" ? 3 : 1,
+      };
+
+      instance.draw();
+    }
+
+    if (step === 8) {
+      instance.options.data[2].attr = {
+        "stroke-width": props.highlight === "step-8_left-eq" ? 3 : 1,
+      };
+
+      instance.options.data[3].attr = {
+        "stroke-width": props.highlight === "step-8_right-eq" ? 3 : 1,
       };
 
       instance.draw();

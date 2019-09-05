@@ -280,7 +280,7 @@ Derivácia zloženej funkcie
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}}-\frac{x \cdot e^{\frac{1}{x}}}{x^{x}} = e^{\frac{1}{x}} - \frac{e^{\frac{1}{x}}}{x}
+      = e^{\frac{1}{x}}-\frac{x \cdot e^{\frac{1}{x}}}{x^{2}} = e^{\frac{1}{x}} - \frac{e^{\frac{1}{x}}}{x}
     [/equation]
   [/td]
 [/tr]
@@ -302,56 +302,63 @@ Derivácia zloženej funkcie
 [/step]
 
 [step]
-[div id:"sekcia-7"/]
-#### 7. Stacionárne body:
-
-Stacinárne body sú body z definičného oboru spojitej funkcie [equation]f[/equation], v ktorých
-je [equation]f^{\prime}(x)=0[/equation] alebo [equation]f^{\prime}[/equation] neexistuje.
-
-[equation display:true]
-e^{\frac{1}{x}} \cdot (x-1) = 0 \implies \color{orange}{x=1}
-[/equation]
-
-[div style:`{ textAlign: "center", marginTop: "30px" }`]
-[ScrollDownIcon /]
-[/div]
-
-[/step]
-
-[step]
 
 #### 8. Monotónnosť funkcie
 
 Nech funkcia [equation]f[/equation] je spojitá na intervale [equation](a,b)[/equation] a nech vo vnútri
 tohto intervalu existuje [equation]f^{\prime}[/equation]. Ak pre každé [equation]x \in (a,b)[/equation] je
 
-[equation display:true]
-f^{\prime}(x) > 0 \text{     } (f^{\prime}(x)<0),
-[/equation]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "480px"}`]
+[tbody]
+  [tr]
+    [td style:`{ color: highlight === "step-5_top-eq" ? "#950028" : "#000"}` onMouseEnter:`highlight = "step-5_top-eq"` onMouseLeave:`highlight = null`]
+      [equation display:true]
+        f^{\prime}(x) > 0
+      [/equation]
+    [/td]
+    [td style:`{ color: highlight === "step-5_top-eq" ? "#950028" : "#000"}` onMouseEnter:`highlight = "step-5_top-eq"` onMouseLeave:`highlight = null`]
+      [equation display:true]
+        \text{     }
+      [/equation]
+    [/td]
+    [td style:`{ color: highlight === "step-5_bottom-eq" ? "#950028" : "#000"}` onMouseEnter:`highlight = "step-5_bottom-eq"` onMouseLeave:`highlight = null`]
+      [equation display:true]
+        (f^{\prime}(x)<0),
+      [/equation]
+    [/td]
+  [/tr]
+[/tbody]
+[/CustomTable]
 
-funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] rastúca (klesajúca).
+tak funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] [span style:`highlight === "step-5_top-eq" ? { color: "blue", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`] rastúca [/span] ([span style:`highlight === "step-5_bottom-eq" ? { color: "blue", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`] klesajúca [/span]).
 
 #### 9. Extrémy funkcie
 
-##### Nutná podmienka pre existenciu lokálneho extrému
+##### Nutná podmienka existencie lokálneho extrému
 
-Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
+Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f^{\prime}(x_0)=0[/equation].
 
-##### Postačujúca podmienka pre existenciu lokálnych extrémov
+Bod [equation]x_0[/equation], v ktorom [equation]f^{\prime}(x_0)=0[/equation], sa nazýva stacionárny bod.
 
-Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x) > 0[/equation]
-
-[equation display:true]
-(f^{\prime}(x) \leq 0, f^{\prime}(x) > 0, f^{\prime}(x) < 0)
-[/equation]
-
-a také pravé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x)\leq 0[/equation]
+Dôsledok: Funkcia može (ale nemusí) mať lokálny extrém v stacionárnom bode, alebo v bode kde prvá derivácia neexistuje.
 
 [equation display:true]
-(f^{\prime}(x) \geq 0, f^{\prime}(x) < 0, f^{\prime}(x)>0).
+e^{\frac{1}{x}} \cdot (x-1) = 0 \implies \color{orange}{x=1}
 [/equation]
 
-Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálne maximum (lokálne minimum, ostré lokálne maximum, ostré lokálne minimum).
+[TooltipLink dataFor:"postacujucapodmienka"][h5]Postačujúca podmienka pre existenciu lokálnych extrémov[/h5][/TooltipLink]
+
+[ReactTooltip id:"postacujucapodmienka" className:"tooltipWhiteBig"]
+
+Nech [equation]f^{\prime}(x_0)=0[/equation] a [equation]f^{\prime\prime}(x_0)=0[/equation]. Potom funkcia má v bode  [equation]x_0[/equation] ostrý lokálny extrém.
+- Ak [equation]f^{\prime\prime}(x_0)<0[/equation], tak funkcia má v bode [equation]x_0[/equation] ostré lokálne maximu.
+- Ak [equation]f^{\prime\prime}(x_0)>0[/equation], tak funkcia má v bode [equation]x_0[/equation] ostré lokálne minimum,
+
+[/ReactTooltip]
+
+Nech funkcia [equation]f[/equation] je spojitá v bode [equation]x_0[/equation]. Nech existuje ľavé okolie bodu [equation]x_0[/equation] také, že pre všetky [equation]x[/equation] z tohto okolia je
+[equation]f'(x) > 0 \text{ }[/equation] [span style:`{ color: highlight === "step-5_bottom-eq" ? "#950028" : "#000"}` onMouseEnter:`highlight = "step-5_bottom-eq"` onMouseLeave:`highlight = null`][equation](f'(x)<0)[/equation][/span] a pravé okolie bodu [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [br/]
+[equation]f'(x)<0 \text{ }[/equation] [span style:`{ color: highlight === "step-5_top-eq" ? "#950028" : "#000"}` onMouseEnter:`highlight = "step-5_top-eq"` onMouseLeave:`highlight = null`][equation](f'(x)>0)[/equation][/span]. Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] ostré lokálne maximum (ostré lokálne minimum).
 
 [/step]
 
@@ -451,21 +458,23 @@ druhú deriváciu [equation]f^{\prime\prime}[/equation] a v bode
 deriváciu [equation]f^{\prime}(x_0)[/equation]. Ak pre všetky [equation]x[/equation] z pravého
 okolia bodu [equation]x_0[/equation] platí
 
-[equation display:true](f^{\prime\prime}(x) > 0, f^{\prime\prime}(x) < 0)[/equation]
+[equation display:true]f^{\prime\prime}(x) > 0 \text{ } (f^{\prime\prime}(x) < 0)[/equation]
 
 a pre všetky [equation]x[/equation] z ľavého okolia bodu [equation]x_0[/equation] platí
 
-[equation display:true](f^{\prime\prime}(x) \lt 0, f^{\prime\prime}(x) \gt 0)[/equation]
+[equation display:true]f^{\prime\prime}(x) \lt 0 \text{ } (f^{\prime\prime}(x) \gt 0)[/equation]
 
 tak [equation]x_0[/equation] je inflexný bod funkcie [equation]f[/equation].
 
 [/ReactTooltip]
 
-Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\prime\prime\prime}(x)≠0[/equation] sa nazývajú inflexné body.
+Nech funkcia [equation]f[/equation] je definovaná a spojitá v okolí bodu [equation]x_0 \in D(f)[/equation]. Ak existuje ľavé okolie bodu [equation]x_0[/equation], v ktorom je funkcia konvexná (konkávna) a pravé okolie bodu [equation]x_0[/equation], v ktorom je funkcia konkávna (konvexná), potom bod nazývame inflexný bod.
 
 [equation display:true]
 \frac{e^{\frac{1}{x}}}{x^3} ≠ 0 \implies e^{\frac{1}{x}} ≠ 0
 [/equation]
+
+[span style:`{ color: "red" }`]Funkcia [equation]f[/equation] nemá inflexné body.[/span]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
 [ScrollDownIcon /]
@@ -479,12 +488,12 @@ Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\p
 
 Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation] na intervale [equation](a,b)[/equation].
 Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation]
-[span style:`highlight === "step-9_left-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`] konvexná [/span] ([span style:`highlight === "step-9_right-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`]konkávna[/span]) vtedy a len vtedy, keď platí:
+[span style:`highlight === "step-8_left-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`] konvexná [/span] ([span style:`highlight === "step-8_right-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`]konkávna[/span]) vtedy a len vtedy, keď platí:
 
 [CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "220px"}`]
 [tbody]
 [tr]
-  [td style:`{ color: highlight === "step-9_left-eq" ? "#006762" : "#000"}` onMouseEnter:`highlight = "step-9_left-eq"` onMouseLeave:`highlight = null`]
+  [td style:`{ color: highlight === "step-8_left-eq" ? "#006762" : "#000"}` onMouseEnter:`highlight = "step-8_left-eq"` onMouseLeave:`highlight = null`]
     [equation className:"text-left" display:true]
       \color{#006762}{f^{\prime\prime}(x)\geq 0}
     [/equation]
@@ -494,7 +503,7 @@ Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation]
       \text{ }
     [/equation]
   [/td]
-  [td onMouseEnter:`highlight = "step-9_right-eq"` onMouseLeave:`highlight = null`]
+  [td onMouseEnter:`highlight = "step-8_right-eq"` onMouseLeave:`highlight = null`]
     [equation className:"text-left" display:true]
       \color{#006762}{(f^{\prime\prime}(x)\leq 0})
     [/equation]
