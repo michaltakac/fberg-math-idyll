@@ -7,7 +7,7 @@ const { Observable, from, of, fromEvent } = require("rxjs");
 const { delay, tap, mergeMap, concatMap, repeat, takeUntil, takeWhile } = require("rxjs/operators");
 
 let instance = null;
-let lastStep = null
+let lastStep = null;
 
 class PriebehFunkcie extends D3Component {
   initialize(node, props) {
@@ -38,8 +38,8 @@ class PriebehFunkcie extends D3Component {
 
     const step = props.step;
     const d = data[step || 0];
-    if (props.step !== oldProps.step && d.plotSettings) {
-      lastStep = oldProps.step
+    if (d.plotSettings) {
+      lastStep = oldProps.step;
       instance = functionPlot({
         target: "#quadratic",
         width: window.innerWidth / 2 - 100,
@@ -70,22 +70,32 @@ class PriebehFunkcie extends D3Component {
       }
 
       if (d.animation) {
-        console.log("ma to animaciu!", instance);
-        console.log(lastStep, props.step)
         const anim = Observable.create(obs => {
           obs.next(d.animation.steps);
           obs.complete();
         }).pipe(
           delay(d.animation.delay || 0),
-          tap((step) => console.log("starting animation step ", step)),
-          mergeMap((x) => from(x)),
+          tap(step => console.log("starting animation step ", step, props.step2animstate)),
+          mergeMap(x => from(x)),
           concatMap(step => of(step).pipe(delay(step.delay || 0))),
           repeat(10),
-          // takeUntil(of(() => instance === null))
           takeWhile(_ => lastStep !== props.step)
         );
-        anim.subscribe(step => instance.programmaticZoom(step.zoom.xDomain, step.zoom.yDomain))
+        anim.subscribe(step => instance.programmaticZoom(step.zoom.xDomain, step.zoom.yDomain));
       }
+    }
+
+    // Custom triggers, todo: modularize
+    if (step === 9) {
+      instance.options.data[2].attr = {
+        "stroke-width": props.highlight === "step-9_left-eq" ? 3 : 1,
+      };
+
+      instance.options.data[3].attr = {
+        "stroke-width": props.highlight === "step-9_right-eq" ? 3 : 1,
+      };
+
+      instance.draw();
     }
   }
 }

@@ -155,13 +155,13 @@ module.exports = [
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [-500, -0.00001],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [0.00001, 500],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
     ],
     zoom: {
@@ -194,13 +194,13 @@ module.exports = [
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [-500, -0.00001],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [0.00001, 500],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
       {
         points: [[1, 0], [1, 0]],
@@ -243,13 +243,13 @@ module.exports = [
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [-500, -0.00001],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
       {
         fn: "(exp(1/x) * (x - 1)) / x",
         range: [0.00001, 500],
         graphType: "interval",
-        color: "red",
+        color: "#950028",
       },
       {
         points: [[1, 0], [1, 0]],
@@ -292,13 +292,13 @@ module.exports = [
         fn: "(exp(1/x) / x^3)",
         range: [-500, -0.001],
         graphType: "polyline",
-        color: "green",
+        color: "#006762",
       },
       {
         fn: "(exp(1/x) / x^3)",
         range: [0.001, 500],
         graphType: "polyline",
-        color: "green",
+        color: "#006762",
       },
     ],
     zoom: {
@@ -331,13 +331,13 @@ module.exports = [
         fn: "(exp(1/x) / x^3)",
         range: [-500, -0.001],
         graphType: "polyline",
-        color: "green",
+        color: "#006762",
       },
       {
         fn: "(exp(1/x) / x^3)",
         range: [0.001, 500],
         graphType: "polyline",
-        color: "green",
+        color: "#006762",
       },
     ],
     zoom: {
@@ -376,18 +376,18 @@ module.exports = [
         fn: "(exp(1/x) / x^3)",
         range: [-500, -0.001],
         graphType: "polyline",
-        color: "#94a24e",
+        color: "#006762",
         attr: {
-          "stroke-width": 3
+          "stroke-width": 1
         }
       },
       {
         fn: "(exp(1/x) / x^3)",
         range: [0.001, 500],
         graphType: "polyline",
-        color: "#c0cb89",
+        color: "#006762",
         attr: {
-          "stroke-width": 3
+          "stroke-width": 1
         }
       },
     ],
