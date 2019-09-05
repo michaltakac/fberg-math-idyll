@@ -40,16 +40,11 @@ Vyšetrite priebeh funkcie [Equation]f[/Equation] a nakreslite jej graf, keď
 [/equation]
 
 ## Riešenie
-### Podmienka
-
-[Equation display:true]
-  x≠0
-[/Equation]
 
 #### 1. Definičný obor funkcie:
 
 [Equation display:true]
-  D(f) = R - {0}
+  D(f) = \mathbb{R} - \{0\}
 [/Equation]
 
 [TooltipLink dataFor:"parnostneparnost"][h4]2. Párnosť a nepárnosť funkcie:[/h4][/TooltipLink]
@@ -112,12 +107,7 @@ Jeho súradnice vypočítame tak, že v predpise funkcie položíme [equation]x=
 [/ReactTooltip]
 
 [div style:`{ textAlign: "center"}`]
-[equation]x=0 \implies [/equation] [span style:`{ fontStyle: "italic", color: "green" }`]Nie je definovaná.[/span]
-[/div]
-[br /]
-
-[div style:`{ textAlign: "center"}`]
-[equation]f(x)=0 \implies 0=x \cdot e^{\frac{1}{x}} \implies x=0 \implies[/equation] [span style:`{ fontStyle: "italic", color: "green" }`]Nie je definovaná.[/span]
+[equation]f(x)=0 \implies x \cdot e^{\frac{1}{x}} = 0 \implies x=0 \implies[/equation] [span style:`{ fontStyle: "italic", color: "green" }`]Nie je definovaná.[/span]
 [/div]
 
 [div style:`{ textAlign: "center", marginTop: "30px" }`]
@@ -160,7 +150,7 @@ V bodoch nespojitosti vypočítame jednostranné limity. Ak aspoň jednostranná
 
 Asymptoty so smernicou sú priamky [equation]y=k_1 x+q_1[/equation] a [equation]y=k_2 x+q_2[/equation], ktorých koeficienty vypočítame nasledovne:
 
-[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "450px"}`]
   [tbody]
     [tr]
       [td]
@@ -168,24 +158,20 @@ Asymptoty so smernicou sú priamky [equation]y=k_1 x+q_1[/equation] a [equation]
           k_1 = \lim_{x \to ∞} \frac{f(x)}{x}
         [/equation]
       [/td]
-    [/tr]
-    [tr]
-      [td]
-        [equation display:true]
+      [td style:`{ paddingLeft: "50px" }`]
+        [equation className:"text-left" display:true]
           q_1 = \lim_{x \to ∞} (f(x) - k_1 \cdot x)
         [/equation]
       [/td]
     [/tr]
     [tr]
       [td]
-        [equation display:true]
+        [equation className:"text-left" display:true]
           k_2 = \lim_{x \to -∞} \frac{f(x)}{x}
         [/equation]
       [/td]
-    [/tr]
-    [tr]
-      [td]
-        [equation display:true]
+      [td style:`{ paddingLeft: "50px" }`]
+        [equation className:"text-left" display:true]
           q_2 = \lim_{x \to -∞} (f(x) - k_2 \cdot x)
         [/equation]
       [/td]
@@ -195,7 +181,7 @@ Asymptoty so smernicou sú priamky [equation]y=k_1 x+q_1[/equation] a [equation]
 
 Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné čísla.
 
-[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "400px"}`]
 [tbody]
 [tr]
   [td]
@@ -205,7 +191,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 [/tbody]
 [/CustomTable]
 
-[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "333px"}`]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "400px"}`]
 [tbody]
 [tr]
   [td]
@@ -215,7 +201,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
   [/td]
   [td]
     [equation className:"text-left" display:true]
-      = \lim_{x \to ∞} (x \cdot e^{\frac{1}{x}} - 1 \cdot x)
+      = \lim_{x \to ∞} (x \cdot e^{\frac{1}{x}} - 1 \cdot x) = \lim_{x \to ∞} x (e^{\frac{1}{x}} - 1)
     [/equation]
   [/td]
 [/tr]
@@ -223,7 +209,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
   [td][/td]
   [td]
     [equation display:true]
-      = \lim_{x \to ∞} x (e^{\frac{1}{x}} - 1)
+      = \lim_{x \to ∞} \frac{e^{\frac{1}{x} - 1}}{\frac{1}{x}} \stackrel{L'H}{=} \lim_{x \to ∞} \frac{e^{\frac{1}{x}} \cdot (-1 \cdot x^{-2})}{-1 \cdot x^{-2}}
     [/equation]
   [/td]
 [/tr]
@@ -231,31 +217,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
   [td][/td]
   [td]
     [equation display:true]
-      = \lim_{x \to ∞} \frac{e^{\frac{1}{x} - 1}}{\frac{1}{x}}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      \stackrel{L'H}{=} \lim_{x \to ∞} \frac{e^{\frac{1}{x}} \cdot (-1 \cdot x^{-2})}{-1 \cdot x^{-2}}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      = \lim_{x \to ∞} e^{\frac{1}{x}}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      = 1
+      = \lim_{x \to ∞} e^{\frac{1}{x}} = 1
     [/equation]
   [/td]
 [/tr]
@@ -274,23 +236,17 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 
 [step]
 [div id:"sekcia-6" onEnterView:`step2animstate = null`/]
-[TooltipLink dataFor:"derivacie"][h4]6. Vypočítame prvú deriváciu funkcie:[/h4][/TooltipLink]
+[TooltipLink dataFor:"prvaderivacia"][h4]6. Prvá derivácia funkcie:[/h4][/TooltipLink]
 
-[ReactTooltip id:"derivacie" className:"tooltipWhiteBig"]
+[ReactTooltip id:"prvaderivacia" className:"tooltipWhiteBig"]
 
-Derivácia súčinu (prvá a druhá derivácia)
+Derivácia súčinu
 
 [equation display:true]
 [f(x)\cdot g(x)]^{\prime}=f^{\prime}(x)\cdot g(x)+f(x)\cdot g^{\prime}(x)
 [/equation]
 
-Derivácia podielu (druhá derivácia)
-
-[equation display:true]
-\left[\frac{f(x)}{g(x)}\right]^{\prime}=\frac{f^{\prime}(x)\cdot g(x)-f(x)\cdot g^{\prime}(x)}{g(x)^2}\text{,\quad ak } g(x)\ne 0
-[/equation]
-
-Derivácia zloženej funkcie (prvá a druhá derivácia)
+Derivácia zloženej funkcie
 
 [equation display:true]
 [g(f(x))]^{\prime}=g^{\prime}(f(x))f^{\prime}(x)
@@ -324,7 +280,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}}-\frac{x \cdot e^{\frac{1}{x}}}{x^{x}}
+      = e^{\frac{1}{x}}-\frac{x \cdot e^{\frac{1}{x}}}{x^{x}} = e^{\frac{1}{x}} - \frac{e^{\frac{1}{x}}}{x}
     [/equation]
   [/td]
 [/tr]
@@ -332,23 +288,7 @@ Derivácia zloženej funkcie (prvá a druhá derivácia)
   [td][/td]
   [td]
     [equation display:true]
-      = e^{\frac{1}{x}} - \frac{e^{\frac{1}{x}}}{x}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      = \frac{x \cdot e^{\frac{1}{x}}-e^{\frac{1}{x}}}{x}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      \color{#950028}{= \frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
+      = \frac{x \cdot e^{\frac{1}{x}}-e^{\frac{1}{x}}}{x} \text{ } \color{#950028}{= \frac{e^{\frac{1}{x}} \cdot (x-1)}{x}}
     [/equation]
   [/td]
 [/tr]
@@ -391,11 +331,13 @@ f^{\prime}(x) > 0 \text{     } (f^{\prime}(x)<0),
 
 funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] rastúca (klesajúca).
 
+#### 9. Extrémy funkcie
+
 ##### Nutná podmienka pre existenciu lokálneho extrému
 
 Ak funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokálny extrém a má v tom bode deriváciu, potom [equation]f'(x_0)=0[/equation].
 
-#### 9. Postačujúca podmienka pre existenciu lokálnych extrémov
+##### Postačujúca podmienka pre existenciu lokálnych extrémov
 
 Nech funkcia [equation]f[/equation] je v bode [equation]x_0[/equation] spojitá. Nech existuje také ľavé okolie čísla [equation]x_0[/equation], že pre všetky [equation]x[/equation] z tohto okolia je [equation]f'(x) > 0[/equation]
 
@@ -414,7 +356,29 @@ Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokáln
 [/step]
 
 [step]
-[TooltipLink dataFor:"derivacie"][h4]10. Vypočítame druhú deriváciu funkcie:[/h4][/TooltipLink]
+[TooltipLink dataFor:"druhaderivacia"][h4]10. Druhá derivácia funkcie:[/h4][/TooltipLink]
+
+[ReactTooltip id:"druhaderivacia" className:"tooltipWhiteBig"]
+
+Derivácia súčinu
+
+[equation display:true]
+[f(x)\cdot g(x)]^{\prime}=f^{\prime}(x)\cdot g(x)+f(x)\cdot g^{\prime}(x)
+[/equation]
+
+Derivácia podielu
+
+[equation display:true]
+\left[\frac{f(x)}{g(x)}\right]^{\prime}=\frac{f^{\prime}(x)\cdot g(x)-f(x)\cdot g^{\prime}(x)}{g(x)^2}\text{,\quad ak } g(x)\ne 0
+[/equation]
+
+Derivácia zloženej funkcie
+
+[equation display:true]
+[g(f(x))]^{\prime}=g^{\prime}(f(x))f^{\prime}(x)
+[/equation]
+
+[/ReactTooltip]
 
 [CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "480px"}`]
 [tbody]
@@ -426,7 +390,7 @@ Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokáln
   [/td]
   [td]
     [equation className:"text-left" display:true]
-      = (x \cdot e^{\frac{1}{x}})^{\prime\prime}
+      = (x \cdot e^{\frac{1}{x}})^{\prime\prime} = \left(\frac{e^{\frac{1}{x}} \cdot (x-1)}{x}\right)^{\prime}
     [/equation]
   [/td]
 [/tr]
@@ -450,15 +414,7 @@ Potom funkcia [equation]f[/equation] má v bode [equation]x_0[/equation] lokáln
   [td][/td]
   [td]
     [equation display:true]
-      = -e^{\frac{1}{x}} \cdot \frac{x-1}{x^3} + \frac{e^{\frac{1}{x}}}{x^2}
-    [/equation]
-  [/td]
-[/tr]
-[tr]
-  [td][/td]
-  [td]
-    [equation display:true]
-      = e^{\frac{1}{x}} \cdot (\frac{1}{x^2} - \frac{x-1}{x^3})
+      = -e^{\frac{1}{x}} \cdot \frac{x-1}{x^3} + \frac{e^{\frac{1}{x}}}{x^2} = e^{\frac{1}{x}} \cdot \left(\frac{1}{x^2} - \frac{x-1}{x^3}\right)
     [/equation]
   [/td]
 [/tr]
@@ -522,21 +478,25 @@ Body, v ktorých je [equation]f^{\prime\prime}(x)=0[/equation] a [equation]f^{\p
 #### 12. Konvexnosť a konkávnosť funkcie
 
 Nech funkcia [equation]f[/equation] má druhú deriváciu [equation]f^{\prime\prime}[/equation] na intervale [equation](a,b)[/equation].
-Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation] konvexná (konkávna) vtedy a len vtedy, keď platí:
+Funkcia [equation]f[/equation] je na intervale [equation](a,b)[/equation]
+[span style:`highlight === "step-9_left-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`] konvexná [/span] ([span style:`highlight === "step-9_right-eq" ? { color: "#006762", fontWeight: "bold" } : { color: "#000", fontWeight: "normal" }`]konkávna[/span]) vtedy a len vtedy, keď platí:
 
-
-[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "210px"}`]
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "220px"}`]
 [tbody]
 [tr]
-  [td style:`{ color: highlight === "step-9_left-eq" ? "#006762" : "#000"} ` onMouseEnter:`highlight = "step-9_left-eq"` onMouseLeave:`highlight = null`]
+  [td style:`{ color: highlight === "step-9_left-eq" ? "#006762" : "#000"}` onMouseEnter:`highlight = "step-9_left-eq"` onMouseLeave:`highlight = null`]
     [equation className:"text-left" display:true]
       \color{#006762}{f^{\prime\prime}(x)\geq 0}
     [/equation]
   [/td]
-  [td] , [/td]
+  [td]
+    [equation className:"text-left" display:true]
+      \text{ }
+    [/equation]
+  [/td]
   [td onMouseEnter:`highlight = "step-9_right-eq"` onMouseLeave:`highlight = null`]
     [equation className:"text-left" display:true]
-      \color{#006762}{f^{\prime\prime}(x)\leq 0}
+      \color{#006762}{(f^{\prime\prime}(x)\leq 0})
     [/equation]
   [/td]
 [/tr]

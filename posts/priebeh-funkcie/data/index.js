@@ -121,7 +121,7 @@ module.exports = [
       },
     ],
     zoom: {
-      xDomain: [-10, 10],
+      xDomain: [-5, 5],
       yDomain: [-10, 10],
     },
   },
