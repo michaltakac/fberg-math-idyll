@@ -1,0 +1,139 @@
+[
+  {
+    "plotSettings": {},
+    "plotData": [
+      {
+        "fn": "x * exp(1/x)",
+        "range": [0.00001, 500],
+        "color": "blue",
+        "skipTip": true
+      },
+      {
+        "fn": "x * exp(1/x)",
+        "range": [-500, -0.00001],
+        "color": "blue",
+        "skipTip": true
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-10, 10],
+        "yDomain": [-10, 10]
+      }
+    }
+  },
+  {
+    "plotSettings": {},
+    "plotData": [
+      {
+        "fn": "x * exp(1/x)",
+        "graphType": "interval",
+        "color": "blue",
+        "skipTip": true
+      },
+      {
+        "fn": "- x * exp(- 1/x)",
+        "graphType": "interval",
+        "color": "red",
+        "skipTip": true
+      },
+      {
+        "fn": "- x * exp(1/x)",
+        "graphType": "interval",
+        "color": "green",
+        "skipTip": true
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-50, 10],
+        "yDomain": [-25, 5]
+      }
+    }
+  },
+  {
+    "plotSettings": {},
+    "plotData": [
+      {
+        "fn": "x * exp(1/x)",
+        "graphType": "interval",
+        "color": "blue",
+        "skipTip": true
+      },
+      {
+        "fn": "x^2",
+        "graphType": "interval",
+        "color": "green",
+        "skipTip": true
+      },
+      {
+        "fn": "sin(x^2) + cos(x^2)",
+        "graphType": "interval",
+        "color": "red",
+        "skipTip": true
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-14, 25],
+        "yDomain": [-25, -1]
+      }
+    }
+  },
+  {
+    "plotSettings": {},
+    "plotData": [
+      {
+        "fn": "x * exp(1/x)",
+        "graphType": "interval",
+        "color": "blue",
+        "skipTip": true
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-10, 10],
+        "yDomain": [-10, 10]
+      }
+    }
+  },
+  {
+    "plotSettings": {},
+    "plotData": [
+      {
+        "fn": "x * exp(1/x)",
+        "graphType": "interval",
+        "color": "blue",
+        "skipTip": true
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-10, 10],
+        "yDomain": [-10, 10]
+      }
+    }
+  },
+  {
+    "plotSettings": {
+      "tip": {
+        "xLine": true,
+        "yLine": true,
+        "render": "f(x)"
+      }
+    },
+    "plotData": [
+      {
+        "fn": "(exp(1/x) * (x - 1)) / x",
+        "graphType": "interval",
+        "color": "red"
+      }
+    ],
+    "animation": {
+      "zoom": {
+        "xDomain": [-10, 10],
+        "yDomain": [-10, 10]
+      }
+    }
+  }
+]

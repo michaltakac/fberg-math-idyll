@@ -1,0 +1,155 @@
+[meta title:"FBERG TUKE Matematika 1 - Vektory" description:"Vektory" /]
+
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+## Vektory
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné si ich stiahnuť do svojho PC alebo smartfónu.[/span]
+
+### Definícia vektora - aritmetická
+
+Usporiadanú skupinu [Equation]n[/Equation] čísel nazývame [Equation]n[/Equation] - členný aritmetický vektor. Označujeme ho
+
+[Equation display:true]
+\vec{a}=\left(a_1,a_2,\ldots,a_n\right).
+[/Equation]
+
+[TooltipLink dataFor:"rovnostvektorov"][HeaderWithInfo tag:"h4"]1. Rovnosť vektorov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"rovnostvektorov" className:"tooltipWhiteBig"]
+Nech [Equation]n\in \mathbb{N}[/Equation].[br /]
+Vektory [Equation]\vec{a}=\left(a_1,a_2,\ldots,a_n\right)[/Equation] a [Equation]\vec{b}=\left(b_1,b_2,\ldots,b_n\right)[/Equation] sa rovnajú,[br /]
+zapisujeme [Equation]\vec{a}=\vec{b}[/Equation], keď pre všetky [Equation]i=1,2,\ldots,n[/Equation] platí
+
+[Equation display:true]
+a_i=b_i.
+[/Equation]
+
+[/ReactTooltip]
+
+[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr1.pdf" /]
+
+[TooltipLink dataFor:"operaciesvektormi"][HeaderWithInfo tag:"h4"]2. Operácie s vektormi[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"operaciesvektormi" className:"tooltipWhiteBig"]
+#### Súčet vektorov
+Nech [Equation]n\in \mathbb{N}[/Equation].[br /]
+Vektor [Equation]\vec{c}=\left(c_1,c_2,\ldots,c_n\right)[/Equation] nazývame súčtom vektorov [Equation]\vec{a}=\left(a_1,a_2,\ldots,a_n\right)[/Equation] a [Equation]{\vec{b}=\left(b_1,b_2,\ldots,b_n\right)}[/Equation],[br /]
+zapisujeme ako [Equation] \vec{c}=\vec{a}+\vec{b}[/Equation], keď pre všetky [Equation]i=1,2,\ldots,n[/Equation] platí
+
+[Equation display:true]
+c_i=a_i+b_i.
+[/Equation]
+
+#### Rozdiel vektorov
+
+Nech [Equation]n\in \mathbb{N}[/Equation].[br /]
+Vektor [Equation]\vec{c}=\left(c_1,c_2,\ldots,c_n\right)[/Equation] nazývame rozdielom vektorov [Equation]\vec{a}=\left(a_1,a_2,\ldots,a_n\right)[/Equation] a [Equation]{\vec{b}=\left(b_1,b_2,\ldots,b_n\right)}[/Equation],[br /]
+zapisujeme ako [Equation]\vec{c}=\vec{a}-\vec{b}[/Equation], keď pre všetky [Equation]i=1,2,\ldots,n[/Equation] platí
+
+[Equation display:true]
+c_i = a_i - b_i.
+[/Equation]
+
+#### Násobenie vektora číslom
+
+Nech [Equation]k[/Equation] je reálne číslo, [Equation]n[/Equation] je prirodzené číslo a [Equation]\vec{a}=\left(a_1,a_2,\ldots,a_n\right)[/Equation] je [Equation]n[/Equation]-rozmerný vektor.[br /]
+Vektor [Equation]\vec{d}=\left(d_1,d_2,\ldots,d_n\right)[/Equation] je [Equation]k[/Equation]-násobkom vektora [Equation]\vec{a}[/Equation],[br /]
+zapisujeme [Equation]\vec{d}=k\cdot \vec{a}[/Equation], keď pre všetky [Equation]i=1,2,\ldots,n[/Equation], platí
+
+[Equation display:true]
+d_i=k\cdot a_i.
+[/Equation]
+
+[/ReactTooltip]
+
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr2.pdf" /]
+
+[TooltipLink dataFor:"linearnakombinaciavektorov"][HeaderWithInfo tag:"h4"]3. Lineárna kombinácia vektorov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"linearnakombinaciavektorov" className:"tooltipWhiteBig"]
+Nech [Equation]n\in \mathbb{N}[/Equation].
+
+Vektor [Equation]\vec{a}[/Equation] je lineárnou kombináciou vektorov [Equation]\vec{a_1},\vec{a_2}, \dots,\vec{a_n}[/Equation],[br /]
+ak existujú také reálne čísla [Equation]k_i[/Equation] pre [Equation]{i= 1,2, \ldots, n} [/Equation], že platí
+
+[Equation display:true]
+ k_1\cdot\vec{a_1} +k_2\cdot\vec{a_2} + \ldots+k_n\cdot\vec{a_n} =\vec{a}.
+[/Equation]
+
+#### Poznámka:
+
+Vektor [Equation]\vec{a}[/Equation] je vtedy lineárnou kombináciou vektorov [Equation]\vec{a_1},\vec{a_2}, \dots,\vec{a_n}[/Equation],[br /]
+ak ho môžeme vyjadriť pomocou týchto vektorov používajúc iba sčítanie a násobenie číslami.
+
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr3.pdf" /][br /]
+[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr4.pdf" /]
+
+[TooltipLink dataFor:"linearnazavislostanezavislost"][HeaderWithInfo tag:"h4"]4. Lineárna závislosť a nezávislosť vektorov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"linearnazavislostanezavislost" className:"tooltipWhiteBig"]
+#### Lineárna závislosť
+
+Hovoríme, že vektory [Equation]\vec{a}_1,\vec{a}_2, \ldots,\vec{a}_n[/Equation] sú [strong]lineárne závislé[/strong],[br /]
+ak existuje aspoň jedna konštanta [Equation]k_i\neq 0[/Equation] pre nejaké [Equation]i= 1,2, \ldots, n[/Equation], taká,[br /]
+že ich lineárna kombinácia je rovná nulovému vektoru, t.j.
+
+[Equation display:true]
+k_1\cdot\vec{a}_1 +k_2\cdot\vec{a}_2 + \ldots+k_n\cdot\vec{a}_n =\vec{0}.
+[/Equation]
+
+#### Lineárna nezávislosť
+
+Hovoríme, že vektory [Equation]\vec{a}_1,\vec{a}_2, \ldots,\vec{a}_n[/Equation] sú [strong]lineárne nezávislé[/strong],[br /]
+ak lineárna kombinácia je rovná nulovému vektoru, t.j.
+
+[Equation display:true]
+k_1\cdot\vec{a}_1 +k_2\cdot\vec{a}_2 + \ldots+k_n\cdot\vec{a}_n =\vec{0}.
+[/Equation]
+
+iba ak [Equation]k_1=k_2=\ldots= k_n=0[/Equation].
+
+[/ReactTooltip]
+
+[link text:"Príklad 5a" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr5a.pdf" /][br /]
+[link text:"Príklad 5b" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr5b.pdf" /][br /]
+
+[TooltipLink dataFor:"skalarnysucinvektorov"][HeaderWithInfo tag:"h4"]5. Skalárny súčin vektorov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"skalarnysucinvektorov" className:"tooltipWhiteBig"]
+#### Dĺžka vektora
+
+Nezáporné reálne číslo [Equation]\left|\vec{a}\right|=\sqrt{{a^2_{1}}+\ldots +{a^2_{n}}}[/Equation] sa nazýva dĺžkou vektora [Equation]\vec{a}=(a_1,\ldots, a_n)[/Equation].
+
+#### Jednotkový vektor
+
+Jednotkovým vektorom nazývame vektor, ktorého dĺžka je rovná [Equation]1[/Equation].
+
+#### Skalárny súčin vektorov
+
+Nech [Equation]n\in \mathbb{N}[/Equation].[br /]
+Nech [Equation]\vec{u}=\left(u_1,u_2,\ldots,u_n\right)[/Equation] a [Equation]\vec{v}=\left(v_1,v_2,\ldots,v_n\right)[/Equation] sú [Equation]n[/Equation]-rozmerné vektory.
+
+Skalárny súčin vektorov [Equation]\vec{u}[/Equation] a [Equation]\vec{v}[/Equation] je číslo
+
+[Equation display:true]
+\vec{u}\cdot \vec{v}=u_1 v_1+u_2 v_2+\ldots+u_n v_n=\displaystyle\sum\limits_{i=1}^n u_i v_i.
+[/Equation]
+
+#### Kolmosť dvoch vektorov
+
+Nech [Equation]n\in \mathbb{N}[/Equation].[br /]
+Vektory [Equation]\vec{a}=(a_1,\ldots, a_n)[/Equation] a [Equation]\vec{b}=(b_1,\ldots, b_n)[/Equation] sú navzájom kolmé, ak
+
+[Equation display:true]
+\vec{a}\cdot \vec{b}=0.
+[/Equation]
+
+[/ReactTooltip]
+
+[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr6.pdf" /]
+
+[/section]

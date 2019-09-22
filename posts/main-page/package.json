@@ -1,0 +1,23 @@
+{
+  "name": "fberg-matematika1-main-page",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "layout": "none",
+    "css": "styles.css",
+    "authorView": false,
+    "output": "../../docs/main-page/",
+    "components": [
+      "../../components/",
+      "components"
+    ]
+  },
+  "dependencies": {
+    "d3": "^4.0.0",
+    "idyll": "^4.0.0",
+    "idyll-component": "^1.2.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}

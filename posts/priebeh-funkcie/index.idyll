@@ -1,4 +1,4 @@
-[meta title:"Post 1" description:"Short description of your project" /]
+[meta title:"FBERG TUKE Matematika 1 - Priebeh funkcie" description:"Priebeh funkcie" /]
 
 [var name:"step" value:0/]
 [var name:"highlight" value:null/]
@@ -31,6 +31,7 @@
 [Scroller currentStep:step className:"scroller-container"]
 
 [step]
+[div style:`{ position: "absolute", top: "55px", right: "0px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
 ## Priebeh funkcie
 
 Vyšetrite priebeh funkcie [Equation]f[/Equation] a nakreslite jej graf, keď
@@ -47,7 +48,7 @@ Vyšetrite priebeh funkcie [Equation]f[/Equation] a nakreslite jej graf, keď
   D(f) = \mathbb{R} - \{0\}
 [/Equation]
 
-[TooltipLink dataFor:"parnostneparnost"][h4]2. Párnosť a nepárnosť funkcie:[/h4][/TooltipLink]
+[TooltipLink dataFor:"parnostneparnost"][HeaderWithInfo tag:"h4"]2. Párnosť a nepárnosť funkcie:[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"parnostneparnost" className:"tooltipWhiteBig"]
 Funkcia je párna, ak platí:
@@ -86,7 +87,7 @@ Funkcia nie je párna ani nepárna.
 
 [step]
 [div id:"sekcia-3" onEnterView:`step2animstate = null` /]
-[TooltipLink dataFor:"priesecniky"][h4]3. Priesečníky so súradnicovými osami[/h4][/TooltipLink]
+[TooltipLink dataFor:"priesecniky"][HeaderWithInfo tag:"h4"]3. Priesečníky so súradnicovými osami[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"priesecniky" className:"tooltipWhiteBig" style:`{ maxWidth: "400px"}` multiline:true]
 [div]
@@ -236,7 +237,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 
 [step]
 [div id:"sekcia-6" onEnterView:`step2animstate = null`/]
-[TooltipLink dataFor:"prvaderivacia"][h4]6. Prvá derivácia funkcie:[/h4][/TooltipLink]
+[TooltipLink dataFor:"prvaderivacia"][HeaderWithInfo tag:"h4"]6. Prvá derivácia funkcie:[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"prvaderivacia" className:"tooltipWhiteBig"]
 
@@ -363,7 +364,7 @@ Nech funkcia [equation]f[/equation] je spojitá v bode [equation]x_0[/equation].
 [/step]
 
 [step]
-[TooltipLink dataFor:"druhaderivacia"][h4]10. Druhá derivácia funkcie:[/h4][/TooltipLink]
+[TooltipLink dataFor:"druhaderivacia"][HeaderWithInfo tag:"h4"]10. Druhá derivácia funkcie:[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"druhaderivacia" className:"tooltipWhiteBig"]
 
@@ -443,7 +444,7 @@ Derivácia zloženej funkcie
 [/step]
 
 [step]
-[TooltipLink dataFor:"inflexnybod"][h4]11. Inflexné body:[/h4][/TooltipLink]
+[TooltipLink dataFor:"inflexnybod"][HeaderWithInfo tag:"h4"]11. Inflexné body:[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"inflexnybod" className:"tooltipWhiteBig"]
 

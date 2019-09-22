@@ -1,0 +1,24 @@
+{
+  "name": "vektory",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "layout": "none",
+    "css": "styles.css",
+    "authorView": false,
+    "output": "../../docs/vektory/",
+    "components": [
+      "../../components/",
+      "components"
+    ]
+  },
+  "dependencies": {
+    "d3": "^4.0.0",
+    "idyll": "^4.0.0",
+    "idyll-d3-component": "^2.0.0",
+    "react-tooltip": "^3.10.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
