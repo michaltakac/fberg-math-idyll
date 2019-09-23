@@ -55,6 +55,49 @@ p,
   line-height: 1.75rem;
 }
 
+.auth-body {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.75rem;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.auth-body h1,
+.auth-body h2,
+.auth-body h3,
+.auth-body h4,
+.auth-body h5,
+.auth-body h6 {
+  border-bottom: 0;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+  padding: 10px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  width: 200px;
+}
+.auth-form label {
+  padding-top: 30px;
+  display: block;
+}
+
+.auth-form button {
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #45a049;
+}
 /* Idyll customizations */
 .idyll-scroll {
   margin-top: 0;

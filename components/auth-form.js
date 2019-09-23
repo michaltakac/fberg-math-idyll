@@ -61,7 +61,7 @@ class AuthForm extends React.Component {
   };
   render() {
     return (
-      <div>
+      <section className="auth-body">
         <h1 style={{ marginBottom: "-35px" }}>Matematika 1</h1>
         <h2>FBERG TUKE</h2>
 
@@ -85,7 +85,7 @@ class AuthForm extends React.Component {
         </form>
 
         <Footer />
-      </div>
+      </section>
     );
   }
 }

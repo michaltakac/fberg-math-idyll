@@ -1,5 +1,6 @@
 [meta title:"FBERG TUKE Matematika 1 - Vektory" description:"Vektory" /]
 
+[Page name:"FBERG TUKE Matematika 1 - Vektory"]
 [section className:"article-body"]
 
 [div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
@@ -153,3 +154,4 @@ Vektory [Equation]\vec{a}=(a_1,\ldots, a_n)[/Equation] a [Equation]\vec{b}=(b_1,
 [link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr6.pdf" /]
 
 [/section]
+[/Page]

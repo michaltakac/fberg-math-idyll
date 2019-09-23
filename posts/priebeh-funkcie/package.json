@@ -16,6 +16,7 @@
     "d3": "^4.0.0",
     "idyll": "^4.0.0",
     "idyll-d3-component": "^2.0.0",
+    "react-ga": "^2.6.0",
     "react-tooltip": "^3.10.0",
     "rxjs": "^6.5.3"
   },

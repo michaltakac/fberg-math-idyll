@@ -4,6 +4,7 @@
 [var name:"highlight" value:null/]
 [var name:"step2animstate" value:"stop"/]
 
+[Page name:"FBERG TUKE Matematika 1 - Priebeh funkcie"]
 [div className:"left-container"]
 [section className:"graph-container"]
 
@@ -86,7 +87,7 @@ Funkcia nie je párna ani nepárna.
 [/step]
 
 [step]
-[div id:"sekcia-3" onEnterView:`step2animstate = null` /]
+
 [TooltipLink dataFor:"priesecniky"][HeaderWithInfo tag:"h4"]3. Priesečníky so súradnicovými osami[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"priesecniky" className:"tooltipWhiteBig" style:`{ maxWidth: "400px"}` multiline:true]
@@ -118,7 +119,7 @@ Jeho súradnice vypočítame tak, že v predpise funkcie položíme [equation]x=
 [/step]
 
 [step]
-[div id:"sekcia-4" onEnterView:`step2animstate = "play"` onExitView:`step2animstate = "stop"`/]
+
 #### 4. Limity funkcie v koncových bodoch definičného oboru v bodoch nespojitosti:
 
 Zistíme, ako sa funkcia správa v koncových bodoch definičného oboru. Vypočítame limity:
@@ -146,7 +147,7 @@ V bodoch nespojitosti vypočítame jednostranné limity. Ak aspoň jednostranná
 [/step]
 
 [step]
-[div id:"sekcia-5" onEnterView:`step2animstate = null`/]
+
 #### 5. Asymptoty so smernicou:
 
 Asymptoty so smernicou sú priamky [equation]y=k_1 x+q_1[/equation] a [equation]y=k_2 x+q_2[/equation], ktorých koeficienty vypočítame nasledovne:
@@ -236,7 +237,7 @@ Koeficienty [equation]k[/equation] a [equation]q[/equation] musia byť vlastné 
 [/step]
 
 [step]
-[div id:"sekcia-6" onEnterView:`step2animstate = null`/]
+
 [TooltipLink dataFor:"prvaderivacia"][HeaderWithInfo tag:"h4"]6. Prvá derivácia funkcie:[/HeaderWithInfo][/TooltipLink]
 
 [ReactTooltip id:"prvaderivacia" className:"tooltipWhiteBig"]
@@ -520,3 +521,4 @@ pre každé [equation]x[/equation] z intervalu [equation](a,b)[/equation].
 [/Scroller]
 
 [/section]
+[/Page]
