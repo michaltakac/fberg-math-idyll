@@ -13,6 +13,7 @@ class Page extends React.Component {
 
       if (auth && auth.uid) {
         ReactGA.initialize("UA-39924303-3", {
+          debug: true,
           gaOptions: {
             name: this.props.name || "FBERG TUKE - Matematika 1",
             siteSpeedSampleRate: 100,
@@ -20,7 +21,6 @@ class Page extends React.Component {
           },
         });
         ReactGA.pageview(window.location.pathname + window.location.search);
-        ReactGA.set({ userId: auth.uid });
 
         const nowInMs = new Date().getTime();
 
