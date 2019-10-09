@@ -1,0 +1,139 @@
+[meta title:"FBERG TUKE Matematika 1 - Matice" description:"Matice" /]
+
+[Page name:"FBERG TUKE Matematika 1 - Matice"]
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+
+## Matice
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné si ich stiahnuť do svojho PC alebo smartfónu.[/span]
+
+[TooltipLink dataFor:"rovnostmatic"][HeaderWithInfo tag:"h4"]1. Rovnosť matíc[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"rovnostmatic" className:"tooltipWhiteBig"]
+Nech [Equation]\mathbf{A}[/Equation] a [Equation]\mathbf{B}[/Equation] sú matice rovnakého typu [Equation]m\times n[/Equation],[br /]
+kde [Equation]m,n \in N[/Equation]. Matice [Equation]\mathbf{A}[/Equation] a [Equation]\mathbf{B}[/Equation] sa rovnajú, ak platí
+
+[Equation display:true]
+a_{ij}= b_{ij},
+[/Equation]
+
+pre každé [Equation]i=1,\ldots,m[/Equation] a [Equation]j=1,\ldots,n[/Equation].
+[/ReactTooltip]
+
+[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr1.pdf" /]
+
+[TooltipLink dataFor:"sucetrozdielmatic"][HeaderWithInfo tag:"h4"]2. Súčet matíc (Rozdiel matíc)[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"sucetrozdielmatic" className:"tooltipWhiteBig"]
+
+Nech [Equation]\mathbf{A}=(a_{ij})_{m\times{}n}[/Equation] a [Equation]\mathbf{B}=(b_{ij})_{m\times{}n}[/Equation] sú matice rovnakého typu [Equation]m \times n[/Equation],[br /]
+kde [Equation]m,n \in N[/Equation]. Súčet matíc [Equation]\mathbf{A}[/Equation] a [Equation]\mathbf{B}[/Equation] je matica
+
+[Equation display:true]
+\mathbf{C}=\mathbf{A}+\mathbf{B}=(c_{ij})_{m\times{}n}
+[/Equation]
+
+[Equation display:true]
+\mathbf{D}=\mathbf{A}-\mathbf{B}=(d_{ij})_{m\times{}n}
+[/Equation]
+
+taká, že pre každé [Equation]i=1,\ldots,m[/Equation] a [Equation]j=1,\ldots,n[/Equation], platí
+
+[Equation display:true]
+c_{ij}=a_{ij}+b_{ij} (d_{ij}=a_{ij}- b_{ij}).
+[/Equation]
+
+[/ReactTooltip]
+
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr2.pdf" /]
+
+[TooltipLink dataFor:"sucinmatic"][HeaderWithInfo tag:"h4"]3. Súčin matíc[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"sucinmatic" className:"tooltipWhiteBig"]
+Nech sú dané matice [Equation]\mathbf{A}=\left(a_{ij}\right)_{m \times n}[/Equation] a
+[Equation]\mathbf{B}=\left(b_{ij}\right)_{n \times p}[/Equation].[br /]
+Súčinom matíc [Equation]\mathbf{A}[/Equation] a [Equation]\mathbf{B}[/Equation] rozumieme maticu [Equation]\mathbf{C}=\mathbf{A}\cdot\mathbf{B}=\left(c_{ij}\right)_{m \times p}[/Equation], kde
+
+[Equation display:true]
+c_{ij}= \sum_{k=1}^n a_{ik} \cdot b_{kj} = a_{i1} \cdot b_{1j}+a_{i2} \cdot b_{2j}+\cdots+a_{in} \cdot b_{nj},
+[/Equation]
+
+pre každé [Equation]i=1,\ldots, m[/Equation] a [Equation]j=1,\ldots, n[/Equation], kde [Equation]m,n,p \in \Nu[/Equation].
+
+#### Násobenie matice konštantou
+
+[Equation]k[/Equation]-násobkom matice [Equation]\mathbf{A}=(a_{ij})_{m\times{}n}[/Equation] nazývame maticu [Equation]\mathbf{F}=(f_{ij})_{m\times{}n}[/Equation],[br /]
+pričom pre všetky [Equation]{i=1,\ldots,m}[/Equation] a [Equation]{j=1,\ldots,n}[/Equation], kde [Equation]m,n \in N[/Equation], platí
+
+[Equation display:true]
+f_{ij}=k\cdot a_{ij}.
+[/Equation]
+
+Zapisujeme [Equation]\mathbf{F}=k\cdot\mathbf{A}[/Equation].
+[/ReactTooltip]
+
+[link text:"Príklad 4a" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr4a.pdf" /][br /]
+[link text:"Príklad 4b" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr4b.pdf" /][br /]
+[link text:"Príklad 5" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr5.pdf" /][br /]
+[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr6.pdf" /]
+
+[TooltipLink dataFor:"transponovanamatica"][HeaderWithInfo tag:"h4"]4. Transponovaná matica[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"transponovanamatica" className:"tooltipWhiteBig"]
+Transponovanou maticou k matici [Equation]\mathbf{A}[/Equation] nazývame maticu,[br /]
+ktorej stĺpce sa rovnajú príslušným riadkom matice [Equation]\mathbf{A}[/Equation].[br /]
+Transponovanú maticu k matici [Equation]\mathbf{A}[/Equation] označujeme [Equation]\mathbf{A^{T}}[/Equation].
+
+[Equation display:true]
+\text{Ak }\quad\mathbf{A}=
+\left( \begin{array}{cccc}
+a_{11} & a_{12} & \ldots  & a_{1n} \\
+a_{21} & a_{22} & \ldots  & a_{2n} \\
+\vdots & \vdots & \ddots  & \vdots  \\
+a_{m1} & a_{m2} & \ldots  & a_{mn}
+\end{array} \right)\text{,}
+[/Equation]
+[Equation display:true]
+\text{tak } \quad
+\mathbf{A^{\mathrm{T}}} =
+\left( \begin{array}{cccc}
+a_{11} & a_{21} & \ldots  & a_{m1} \\
+a_{12} & a_{22} & \ldots  & a_{m2} \\
+\vdots & \vdots & \ddots  & \vdots  \\
+a_{1n} & a_{2n} & \ldots  & a_{mn}
+\end{array} \right).
+[/Equation]
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr3.pdf" /]
+
+[TooltipLink dataFor:"hodnostmatice"][HeaderWithInfo tag:"h4"]5. Hodnosť matice[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"hodnostmatice" className:"tooltipWhiteBig"]
+Hodnosťou matice [Equation]\mathbf{A}[/Equation], označujeme [Equation]rank_{\mathbf{A}}[/Equation],[br /]
+nazývame maximálny počet lineárne nezávislých vektorov tvoriacich riadky (resp. stĺpce) matice.[br /]
+
+Platí
+
+[Equation display:true]
+rank_{\mathbf{A}} \leq \max \left\{m,n\right\}.
+[/Equation]
+
+#### Ekvivalentné úpravy matice
+
+Ekvivalentnou úpravou matice nazývame:[br/]
+
+- výmenu poradia dvoch riadkov/stĺpcov matice,
+- vynásobenie ľubovoľného riadku/stĺpca matice číslom rôznym od nuly,
+- pripočítanie lineárnej kombinácie riadku/stĺpca matice k ľubovoľnému inému riadku matice.
+
+[/ReactTooltip]
+
+[link text:"Príklad 7" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr7.pdf" /][br /]
+[link text:"Príklad 8a" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr8a.pdf" /][br /]
+[link text:"Príklad 8b" url:"https://matematika.fberg.tuke.sk/zosit1/2/pr8b.pdf" /]
+
+[/section]
+[/Page]
