@@ -1,0 +1,298 @@
+[meta title:"FBERG TUKE Matematika 1 - Determinanty" description:"Determinanty" /]
+
+[Page name:"FBERG TUKE Matematika 1 - Determinanty"]
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+## Determinanty
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné si ich stiahnuť do svojho PC alebo smartfónu.[/span]
+
+### Determinant
+
+Nech [Equation]n \in \mathbb{N}[/Equation] a nech [Equation]\mathbf{A}[/Equation] je štvorcová matica [Equation]n[/Equation]-tého rádu. Determinantom matice [Equation]\mathbf{A}[/Equation] nazývame číslo [Equation]\det{(\mathbf{A})}[/Equation], pre ktoré platí:
+
+[CustomTable className:"center-equation-by-equal-sign" style:`{ maxWidth: "700px", fontSize: "15px"}`]
+  [tbody]
+    [tr]
+      [td style:`{ paddingRight: "10px" }`]1. [/td]
+      [td className:"text-left"]
+        [equation className:"text-left" style:`{ paddingRight: "10px"}`]
+          \det{(\mathbf{A})} = a_{11},
+        [/equation] pre [Equation]n=1[/Equation],
+      [/td]
+    [/tr]
+    [tr]
+      [td style:`{ paddingRight: "10px" }`]2. [/td]
+      [td className:"text-left" style:`{ textAlign: "left"}`]
+        [equation className:"text-left" style:`{ paddingRight: "10px"}`]
+          \det{(\mathbf{A})} = a_{11} \det {(\mathbf{M}_{11})} - a_{12} \det {(\mathbf{M}_{12})} + \ldots + (-1)^{1+n} a_{1n} \det {(\mathbf{M}_{1n})},
+        [/equation] pre [Equation]n\geq2[/Equation],
+      [/td]
+    [/tr]
+  [/tbody]
+[/CustomTable]
+
+kde [Equation]\mathbf{M}_{ij}[/Equation] je  matica rádu [Equation](n-1)[/Equation], ktorá vznikne z matice [Equation]\mathbf{A}[/Equation] vynechaním [Equation]i[/Equation]-tého riadku a [Equation]j[/Equation]-tého stĺpca.
+
+[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr1.pdf" /][br/]
+[link text:"Príklad 1c" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr1c.pdf" /]
+
+### Výpočet determinantov
+
+[TooltipLink dataFor:"krizovepravidlo"][HeaderWithInfo tag:"h4"]Krížové pravidlo pre determinanty rádu 2[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"krizovepravidlo" className:"tooltipWhiteBig"]
+
+#### Determinant matice
+
+[Equation display:true]\mathbf{A}=\left(\begin{array}{cc}a_{11} &
+a_{12}\\a_{21} & a_{22}\end{array} \right)[/Equation]
+
+je číslo, ktoré vypočítame podľa pravidla [br/]
+
+[img src:"static/images/deta_2.png"/]
+
+[/ReactTooltip]
+
+[link text:"Príklad 2b" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr2b.pdf" /]
+
+[TooltipLink dataFor:"sarrus"][HeaderWithInfo tag:"h4"]Sarrusovo pravidlo pre determinanty rádu 3[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"sarrus" className:"tooltipWhiteBig"]
+#### Determinant matice
+[Equation display:true]
+\mathbf{A}=
+\left(\begin{array}{ccc}
+a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{31} & a_{32} & a_{33}
+\end{array} \right)
+[/Equation]
+
+je číslo, ktoré vypočítame podľa pravidla [br/]
+
+[img src:"static/images/deta_1.png"/]
+
+[/ReactTooltip]
+
+[link text:"Príklad 2c" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr2c.pdf" /]
+
+[TooltipLink dataFor:"rozvojdet"][HeaderWithInfo tag:"h4"]Rozvoj determinantu[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"rozvojdet" className:"tooltipWhiteBig"]
+
+#### Rozvoj podľa riadka
+
+Nech [Equation]n \in \mathbb{N}[/Equation]. Nech [Equation]\mathbf{A}[/Equation] je štvorcová matica rádu [Equation]n\geq 2[/Equation]. Potom platí:
+
+[Equation display:true]
+\det{(\mathbf{A})} = a_{i1}\mathbf{D}_{i1}+a_{i2}\mathbf{D}_{i2}+\ldots + a_{in}\mathbf{D}_{in},
+[/Equation]
+
+kde [Equation]\mathbf{D}_{ij}=(-1)^{i+j} \det{(\mathbf{M}_{ij})}[/Equation] a [Equation]\mathbf{M}_{ij}[/Equation] je matica, ktorá vznikla z matice [Equation]\mathbf{A}[/Equation] vynechaním [Equation]i[/Equation]-tého riadku a [Equation]j[/Equation]-tého stĺpca.
+
+#### Rozvoj podľa stĺpca
+
+Nech [Equation]n \in \mathbb{N}[/Equation]. Nech [Equation]\mathbf{A}[/Equation] je štvorcová matica rádu [Equation]n \geq 2[/Equation]. Potom platí:
+
+[Equation display:true]
+\det{(\mathbf{A})}= a_{1j}\mathbf{D}_{1j}+a_{2j}\mathbf{D}_{2j}+\ldots + a_{nj}\mathbf{D}_{nj},
+[/Equation]
+
+kde [Equation]\mathbf{D}_{ij}=(-1)^{i+j} \det{(\mathbf{M}_{ij})}[/Equation] a [Equation]\mathbf{M}_{ij}[/Equation] je matica, ktorá vznikla z matice [Equation]\mathbf{A}[/Equation] vynechaním [Equation]i[/Equation]-tého riadku a [Equation]j[/Equation]-tého stĺpca.
+[/ReactTooltip]
+
+[link text:"Príklad 2a" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr2a.pdf" /][br /]
+[link text:"Príklad 2b" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr2b.pdf" /][br /]
+[link text:"Príklad 2c" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr2c.pdf" /]
+
+[TooltipLink dataFor:"vypocetdet"][HeaderWithInfo tag:"h4"]Výpočet determinantu s využitím vlastnosti determinantov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"vypocetdet" className:"tooltipWhiteBig"]
+
+#### Vlastnosti determinantov
+Nech [Equation]\mathbf{A}[/Equation] je štvorcová matica rádu [Equation]n\geq 2[/Equation].
+
+[div style:`{ fontSize: "14px"}`]
+
+  1. Ak matica [Equation]\mathbf{B}[/Equation] vznikla z matice [Equation]\mathbf{A}[/Equation] výmenou dvoch riadkov (stĺpcov), tak
+[Equation display:true]
+\det{(\mathbf{B})} = -\det{(\mathbf{A})}.
+[/Equation]
+
+  2. Ak matica [Equation]\mathbf{B}[/Equation] vznikla z matice [Equation]\mathbf{A}[/Equation] vynásobením niektorého riadku (stĺpca) matice [Equation]\mathbf{A}[/Equation] konštantou [Equation]k[/Equation], tak
+[Equation display:true]
+\det{(\mathbf{B})} = k \cdot \det{(\mathbf{A})}.
+[/Equation]
+
+  3. Ak matica [Equation]\mathbf{B}[/Equation] vznikla z matice [Equation]\mathbf{A}[/Equation] pripočítaním lineárnej kombinácie iných riadkov (stĺpcov) k nejakému riadku (stĺpcu) matice [Equation]\mathbf{A}[/Equation], tak
+
+[Equation display:true]
+\det{(\mathbf{B})} = \det{(\mathbf{A})}.
+[/Equation]
+
+  4. Ak matica [Equation]\mathbf{A}^{\mathrm{T}}[/Equation] je transponovaná matica k matici [Equation]\mathbf{A}[/Equation], tak
+
+[Equation display:true]
+\det{(\mathbf{A^{\mathrm{T}}})} = \det{(\mathbf{A})}.
+[/Equation]
+
+  5. Ak všetky prvky nejakého riadku (stĺpca) matice [Equation]\mathbf{A}[/Equation] sú rovné [Equation]0[/Equation], tak
+
+[Equation display:true]
+\det{(\mathbf{A})} = 0.
+[/Equation]
+
+  6. Ak matica [Equation]\mathbf{A}[/Equation] je horná (dolná) trojuholníková, potom jej determinant je rovný súčinu prvkov na hlavnej diagonále, t.j.
+
+[Equation display:true]
+\det{(\mathbf{A})} = a_{11} \cdot a_{22} \cdot \ldots \cdot a_{nn}.
+[/Equation]
+
+  7. Ak matice [Equation]\mathbf{A}[/Equation] a [Equation]\mathbf{B}[/Equation] sú obidve štvorcové rádu [Equation]n[/Equation], tak
+
+[Equation display:true]
+\det {(\mathbf{A}\cdot \mathbf{B})} = \det{(\mathbf{A})} \cdot\det{(\mathbf{B})}.
+[/Equation]
+[/div]
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr3.pdf" /]
+
+[TooltipLink dataFor:"vektorovysucin"][HeaderWithInfo tag:"h3"]Vektorový súčin vektorov[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"vektorovysucin" className:"tooltipWhiteBig"]
+
+Vektorovým súčinom vektorov [Equation]\vec{x}=\left(x_1,x_2,x_3\right)[/Equation] a [Equation]\vec{y}=\left(y_1,y_2,y_3\right)[/Equation] nazývame vektor [Equation]\vec{x}\times\vec{y}[/Equation] daný vzťahom
+
+[Equation display:true]
+\vec{x}\times \vec{y}=\left|\begin{array}{rrr}
+\vec{i}&\vec{j}&\vec{k}\\
+x_1&x_2&x_3\\
+y_1&y_2&y_3\\
+\end{array} \right|,
+[/Equation]
+
+kde [Equation]\vec{i}[/Equation], [Equation]\vec{j}[/Equation], [Equation]\vec{k}[/Equation] sú jednotkové vektory v 3D ich súradnice sú: [Equation]\vec{i}=(1,0,0)[/Equation], [Equation]\vec{j}=(0,1,0)[/Equation] a [Equation]\vec{k}=(0,0,1)[/Equation].
+
+[/ReactTooltip]
+
+[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr4.pdf" /]
+
+[TooltipLink dataFor:"zmiesanysucin"][HeaderWithInfo tag:"h3"]Zmiešaný súčin[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"zmiesanysucin" className:"tooltipWhiteBig"]
+
+Zmiešaný súčin vektorov [Equation]\vec{x}=\left(x_1,x_2,x_3\right)[/Equation], [Equation]\vec{y}=\left(y_1,y_2,y_3\right)[/Equation] a [Equation]\vec{z}=\left(z_1,z_2,z_3\right)[/Equation]
+je reálne číslo definované vzťahom
+
+[Equation display:true]
+\vec{x}\cdot (\vec{y}\times \vec{z})=\left|
+\begin{array}{lrr}
+x_1& x_2& x_3\\
+y_1& y_2& y_3\\
+z_1& z_2& z_3\\
+\end{array} \right|.
+[/Equation]
+
+[/ReactTooltip]
+
+[link text:"Príklad 5" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr5.pdf" /]
+
+### Výpočet inverznej matice
+
+Nech [Equation]\mathbf{A}[/Equation] je štvorcová matica rádu [Equation]n, n \in \mathbb{N}[/Equation]. Maticu [Equation]\mathbf{A^{-1}}[/Equation], pre ktorú platí [Equation]\mathbf{A}\cdot \mathbf{A^{-1}}=\mathbf{I}=\mathbf{A^{-1}}\cdot\mathbf{A}[/Equation], nazývame inverznou maticou k matici [Equation]\mathbf{A}[/Equation].
+
+[TooltipLink dataFor:"vypocetinverzmat"][HeaderWithInfo tag:"h4"]Výpočet inverznej matice pomocou blokovej matice[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"vypocetinverzmat" className:"tooltipWhiteBig"]
+
+Postupnosť konečných [strong]riadkových ekvivalentných úprav[/strong], ktorá prepíše štvorcovú regulárnu maticu [Equation]\mathbf{A}[/Equation] na jednotkovú[br /]
+maticu, prepíše jednotkovú maticu na inverznú maticu [Equation]\mathbf{A^{-1}}[/Equation] k matici [Equation]\mathbf{A}[/Equation].
+
+#### Regulárna matica
+
+Štvorcovú maticu [Equation]\mathbf{A}[/Equation] nazývame regulárnou, ak k nej existuje inverzná matica.
+
+[/ReactTooltip]
+
+[TooltipLink dataFor:"blokovamatica"][HeaderWithInfo tag:"h5"]Bloková matica[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"blokovamatica" className:"tooltipWhiteBig"]
+
+#### Bloková matica
+
+Nech [Equation]\mathbf{A}=\left( \begin{array}{cccc}
+a_{11}& a_{12} & \ldots &a_{1n} \\
+a_{21}& a_{22} & \ldots & a_{2n}\\
+\vdots & \vdots& \ddots & \vdots  \\
+a_{n1}& a_{n2} & \ldots & a_{nn}
+\end{array} \right)
+[/Equation] je štvorcová matica rádu [Equation]n \in\mathbb{N}[/Equation].
+
+Maticu tvaru
+[Equation display:true]
+\left( \begin{array}{cccc|cccc}
+a_{11}& a_{12} & \ldots &a_{1n}&1 & 0 & \ldots  &	0 \\
+a_{21}& a_{22} & \ldots & a_{2n}&0	&	1 & \ldots  & 0\\
+\vdots & \vdots& \ddots & \vdots & \vdots & \vdots& \ddots & \vdots \\
+a_{n1}& a_{n2} & \ldots & a_{nn}&0	& 0 & \ldots  & 1
+\end{array} \right)
+[/Equation]
+
+nazývame bloková matica k matici [Equation]\mathbf{A}[/Equation].
+
+[/ReactTooltip]
+
+[TooltipLink dataFor:"riadkoveekvivupravy"][HeaderWithInfo tag:"h5"]Riadkové ekvivalentné úpravy matíc[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"riadkoveekvivupravy" className:"tooltipWhiteBig"]
+
+[strong]Riadkovou ekvivalentnou úpravou matice nazývame:[/strong]
+
+  1. výmenu poradia dvoch riadkov matice,[br/]
+  2. vynásobenie ľubovoľného riadku matice číslom rôznym od nuly,[br/]
+  3. pripočítanie lineárnej kombinácie riadku matice k ľubovoľnému inému riadku matice.
+
+[/ReactTooltip]
+
+[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr6.pdf" /]
+
+### Výpočet inverznej matice pomocou adjungovanej matice
+
+Nech [Equation]\mathbf{A}[/Equation] je regulárna matica rádu [Equation]n\geq 2[/Equation]. Potom existuje inverzná matica [Equation]\mathbf{A}^{-1}[/Equation]
+k matici [Equation]\mathbf{A}[/Equation] a platí:
+
+[Equation display:true]
+\mathbf{\mathbf{A}^{-1}}=\frac{1}{\det{(\mathbf{A})}}\mathbf{A}^*.
+[/Equation]
+
+[TooltipLink dataFor:"adjungmatica"][HeaderWithInfo tag:"h4"]Adjungovaná matica[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"adjungmatica" className:"tooltipWhiteBig"]
+
+#### Adjungovaná matica
+
+Nech [Equation]\mathbf{A}=a_{ij}[/Equation] je štvorcová matica. Adjungovaná matica (alebo matica algebraických doplnkov) k matici [Equation]\mathbf{A}[/Equation] sa nazýva matica
+
+[Equation display:true]
+\mathbf{A}^*=\left( \begin{array}{rrrr}
+A_{11} & A_{12} &\cdots & A_{1n}\\
+A_{21} & A_{22} &\cdots & A_{2n}\\
+\cdots & \cdots &\cdots & \cdots\\
+A_{n1} &A_{n2}  &\cdots & A_{nn}
+\end{array} \right)^{T}
+[/Equation]
+
+kde [Equation]\mathbf{A}_{ij}=(-1)^{i+j}\det{(\mathbf{M}_{ij})}[/Equation]. Matica [Equation]\mathbf{M}_{ij}[/Equation] je matica, ktorá vznikne z matice [Equation]\mathbf{A}[/Equation] vynechaním [Equation]i[/Equation]-tého riadku a [Equation]j[/Equation]-tého stĺpca.
+
+[Equation]A_{ij}[/Equation] nazývame algebraický doplnok k príslušnému prvku [Equation]a_{ij}[/Equation].
+
+[/ReactTooltip]
+
+[link text:"Príklad 7" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr7.pdf" /][br /]
+[link text:"Príklad 8" url:"https://matematika.fberg.tuke.sk/zosit1/3/pr8.pdf" /]
+
+[/section]
+[/Page]
