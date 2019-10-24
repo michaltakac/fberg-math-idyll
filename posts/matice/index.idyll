@@ -7,7 +7,7 @@
 
 ## Matice
 
-[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné si ich stiahnuť do svojho PC alebo smartfónu.[/span]
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné ich stiahnuť do svojho PC.[/span]
 
 [TooltipLink dataFor:"rovnostmatic"][HeaderWithInfo tag:"h4"]1. Rovnosť matíc[/HeaderWithInfo][/TooltipLink]
 
