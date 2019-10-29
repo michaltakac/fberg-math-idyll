@@ -1,0 +1,43 @@
+[meta title:"FBERG TUKE Matematika 1 - Derivácia funkcie" description:"Derivácia funkcie" /]
+
+[var name:"step" value:0/]
+[var name:"highlight" value:null/]
+[var name:"step2animstate" value:"stop"/]
+
+[Page name:"FBERG TUKE Matematika 1 - Derivácia funkcie"]
+[div className:"left-container"]
+[section className:"graph-container"]
+
+[Derivacie
+  step:`step`
+  highlight: `highlight`
+  step2animstate: `step2animstate`
+/]
+
+// 1. Zadanie príkladu
+[div style:`{ display: step === 0 ? "block": "none" }`]
+[equation display:true]
+  f'(x) = (\frac{5}{1 + x^2})'
+[/equation]
+[/div]
+
+// 2. Riešenie
+
+
+[/section]
+[/div]
+
+[section className:"article-body"]
+
+[Scroller currentStep:step className:"scroller-container"]
+
+[step]
+[div style:`{ position: "absolute", top: "55px", right: "0px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+## Derivácia funkcie
+
+[/step]
+
+[/Scroller]
+
+[/section]
+[/Page]
