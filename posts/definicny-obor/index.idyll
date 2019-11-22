@@ -1,0 +1,39 @@
+[meta title:"FBERG TUKE Matematika 1 - Definičný obor" description:"Definičný obor" /]
+
+[var name:"step" value:0/]
+[var name:"highlight" value:null/]
+[var name:"step2animstate" value:"stop"/]
+
+[Page name:"FBERG TUKE Matematika 1 - Definičný obor"]
+[div className:"left-container"]
+[section className:"graph-container"]
+
+[DefinicnyObor
+  step:`step`
+  highlight: `highlight`
+  step2animstate: `step2animstate`
+/]
+
+[div style:`{ display: step === 0 ? "block": "none" }`]
+[equation display:true]
+  f'(x) = (\frac{5}{1 + x^2})'
+[/equation]
+[/div]
+
+[/section]
+[/div]
+
+[section className:"article-body"]
+
+[Scroller currentStep:step className:"scroller-container"]
+
+[step]
+[div style:`{ position: "absolute", top: "55px", right: "0px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+## Definičný obor
+
+[/step]
+
+[/Scroller]
+
+[/section]
+[/Page]

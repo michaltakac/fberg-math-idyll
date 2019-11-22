@@ -1,0 +1,26 @@
+{
+  "name": "definicny-obor",
+  "version": "1.0.0",
+  "license": "MIT",
+  "idyll": {
+    "layout": "none",
+    "css": "styles.css",
+    "authorView": false,
+    "output": "../../docs/definicny-obor/",
+    "components": [
+      "../../components/",
+      "components"
+    ]
+  },
+  "dependencies": {
+    "d3": "^4.0.0",
+    "idyll": "^4.0.0",
+    "idyll-d3-component": "^2.0.0",
+    "react-ga": "^2.6.0",
+    "react-tooltip": "^3.10.0",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
+}
