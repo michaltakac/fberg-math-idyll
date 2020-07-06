@@ -1,0 +1,65 @@
+[meta title:"FBERG TUKE Matematika 1 - Základné vlastnosti funkcií" description:"Základné vlastnosti funkcií" /]
+
+[Page name:"FBERG TUKE Matematika 1 - Základné vlastnosti funkcií"]
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+
+[TooltipLink dataFor:"funkcia"][HeaderWithInfo tag:"h1"]Funkcia[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"funkcia" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/funkcia.png"/]
+[/ReactTooltip]
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné ich stiahnuť do svojho PC.[/span]
+
+[TooltipLink dataFor:"definicnyoborfunkcie"][HeaderWithInfo tag:"h4"]Definičný obor funkcie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"definicnyoborfunkcie" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/df.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 2a" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2a.pdf" /][br/]
+[link text:"Príklad 2b" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2b.pdf" /][br/]
+[link text:"Príklad 2c" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2c.pdf" /][br/]
+[link text:"Príklad 2d" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2d.pdf" /][br/]
+[link text:"Príklad 2e" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2e.pdf" /][br/]
+[link text:"Príklad 2f" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2f.pdf" /][br/]
+[link text:"Príklad 2g" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr2g.pdf" /][br/]
+
+[HeaderWithMultipleTooltips tag:"h4" parts:`["Párna, ", "nepárna"]` dataFor:`["parna", "neparna"]` post:" funkcia" /]
+
+[ReactTooltip id:"parna" className:"tooltipWhiteBig"]
+[img src:"./static/images/parna_funkcia.png"/]
+[/ReactTooltip]
+
+[ReactTooltip id:"neparna" className:"tooltipWhiteBig"]
+[img src:"./static/images/neparna_funkcia.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 3a" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr3a.pdf" /][br/]
+[link text:"Príklad 3b" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr3b.pdf" /][br/]
+[link text:"Príklad 3c" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr3c.pdf" /][br/]
+[link text:"Príklad 3d" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr3d.pdf" /][br/]
+
+[TooltipLink dataFor:"invfunkc"][HeaderWithInfo tag:"h4"]Inverzná funkcia[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"invfunkc" className:"tooltipWhiteBig"]
+[img src:"./static/images/inverzna_funkcia.png"/]
+[img src:"./static/images/prosta_funkcia.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 4a" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr4a.pdf" /][br/]
+[link text:"Príklad 4b" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr4b.pdf" /][br/]
+[link text:"Príklad 4c" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr4c.pdf" /][br/]
+
+[TooltipLink dataFor:"zlozenafunkcia"][HeaderWithInfo tag:"h4"]Zložená funkcia[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"zlozenafunkcia" className:"tooltipWhiteBig"]
+[img src:"./static/images/zlozena_funkcia.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 5" url:"https://matematika.fberg.tuke.sk/zosit1/5/pr5.pdf" /]
+
+[/section]
+[/Page]

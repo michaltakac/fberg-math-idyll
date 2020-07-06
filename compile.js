@@ -37,6 +37,18 @@ const documents = [
       components: ["./posts/priebeh-funkcie/components/", "components"],
     },
   },
+  {
+    name: "5",
+    idyllOptions: {
+      dataFolder: "./posts/5/data",
+      inputFile: "./posts/5/index.idyll",
+      layout: "none",
+      css: "./posts/5/styles.css",
+      authorView: false,
+      output: "./docs/5/",
+      components: ["./posts/5/components/", "components"],
+    },
+  },
 ];
 
 function compile() {
