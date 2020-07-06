@@ -38,15 +38,15 @@ const documents = [
     },
   },
   {
-    name: "5",
+    name: "funkcie",
     idyllOptions: {
-      dataFolder: "./posts/5/data",
-      inputFile: "./posts/5/index.idyll",
+      dataFolder: "./posts/funkcie/data",
+      inputFile: "./posts/funkcie/index.idyll",
       layout: "none",
-      css: "./posts/5/styles.css",
+      css: "./posts/funkcie/styles.css",
       authorView: false,
-      output: "./docs/5/",
-      components: ["./posts/5/components/", "components"],
+      output: "./docs/funkcie/",
+      components: ["./posts/funkcie/components/", "components"],
     },
   },
 ];
