@@ -1,0 +1,42 @@
+[meta title:"FBERG TUKE Matematika 1 - Postupnosť, limita postupnosti" description:"Postupnosť, limita postupnosti" /]
+
+[Page name:"FBERG TUKE Matematika 1 - Postupnosť, limita postupnosti"]
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+
+# Postupnosť, limita postupnosti
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné ich stiahnuť do svojho PC.[/span]
+
+[TooltipLink dataFor:"aritpost"][HeaderWithInfo tag:"h4"]Aritmetická postupnosť[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"aritpost" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/ap.png"/]
+[img src:"./static/images/sucet_ap.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/6/pr2.pdf" /]
+
+[TooltipLink dataFor:"geompost"][HeaderWithInfo tag:"h4"]Geometrická postupnosť[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"geompost" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/gp.png"/]
+[img src:"./static/images/sucet_gp.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/6/pr3.pdf" /]
+
+[TooltipLink dataFor:"limpost"][HeaderWithInfo tag:"h4"]Výpočet limity postupnosti[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"limpost" className:"tooltipWhiteBig" place:"right"]
+[img src:"./static/images/vlastnosti_lim.png" style:`{ width: "500px" }` /]
+[img src:"./static/images/vztahy_lim.png" style:`{ width: "500px" }`/]
+[img src:"./static/images/lim_1.png" style:`{ width: "500px" }`/]
+[img src:"./static/images/poznamka_lim.png" style:`{ width: "500px" }`/]
+[/ReactTooltip]
+
+[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/6/pr4.pdf" /]
+
+[/section]
+[/Page]

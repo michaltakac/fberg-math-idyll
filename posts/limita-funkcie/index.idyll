@@ -1,0 +1,31 @@
+[meta title:"FBERG TUKE Matematika 1 - Limita funkcie, spojitosť funkcie" description:"Limita funkcie, spojitosť funkcie" /]
+
+[Page name:"FBERG TUKE Matematika 1 - Limita funkcie, spojitosť funkcie"]
+[section className:"article-body"]
+
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
+
+# Limita funkcie, spojitosť funkcie
+
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné ich stiahnuť do svojho PC.[/span]
+
+[TooltipLink dataFor:"limitfunkcie"][HeaderWithInfo tag:"h4"]Výpočet limity funkcie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"limitfunkcie" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/lim_1.png" style:`{ width: "500px" }` /]
+[img src:"./static/images/lim_2.png" style:`{ width: "500px" }` /]
+[/ReactTooltip]
+
+[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/7/pr1.pdf" /][br/]
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/7/pr2.pdf" /]
+
+[TooltipLink dataFor:"spojfunkcie"][HeaderWithInfo tag:"h4"]Spojitosť funkcie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"spojfunkcie" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/spojitost.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/7/pr3.pdf" /]
+
+[/section]
+[/Page]
