@@ -1,43 +1,54 @@
 [meta title:"FBERG TUKE Matematika 1 - Derivácia funkcie" description:"Derivácia funkcie" /]
 
-[var name:"step" value:0/]
-[var name:"highlight" value:null/]
-[var name:"step2animstate" value:"stop"/]
-
 [Page name:"FBERG TUKE Matematika 1 - Derivácia funkcie"]
-[div className:"left-container"]
-[section className:"graph-container"]
-
-[Derivacie
-  step:`step`
-  highlight: `highlight`
-  step2animstate: `step2animstate`
-/]
-
-// 1. Zadanie príkladu
-[div style:`{ display: step === 0 ? "block": "none" }`]
-[equation display:true]
-  f'(x) = (\frac{5}{1 + x^2})'
-[/equation]
-[/div]
-
-// 2. Riešenie
-
-
-[/section]
-[/div]
-
 [section className:"article-body"]
 
-[Scroller currentStep:step className:"scroller-container"]
+[div style:`{ float: "right", marginTop: "45px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
 
-[step]
-[div style:`{ position: "absolute", top: "55px", right: "0px"}`][link text:"späť na hlavné menu" url:"https://matematika.fberg.tuke.sk/zosit1/" /][/div]
-## Derivácia funkcie
+[TooltipLink dataFor:"derivfunkcdef"][HeaderWithInfo tag:"h1"]Derivácia funkcie[/HeaderWithInfo][/TooltipLink]
 
-[/step]
+[ReactTooltip id:"derivfunkcdef" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/definicia.png" /]
+[/ReactTooltip]
 
-[/Scroller]
+[span style:`{ fontSize: "0.9rem", lineHeight: "0.9rem" }`]Priložené príklady v PDF formáte obsahujú interaktívne postupy riešenia, ktoré sa správne zobrazujú iba v programe [link text:"Adobe Acrobat Reader" url:"https://acrobat.adobe.com/sk/en/acrobat/pdf-reader.html" /] a je potrebné ich stiahnuť do svojho PC.[/span]
+
+[TooltipLink dataFor:"derivfunkcie"][HeaderWithInfo tag:"h4"]Výpočet derivácie funkcie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"derivfunkcie" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/vl_der.png" style:`{ width: "500px" }` /]
+[img src:"./static/images/der.png" style:`{ width: "500px" }` /]
+[/ReactTooltip]
+
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr2.pdf" /]
+
+[TooltipLink dataFor:"derzloz"][HeaderWithInfo tag:"h4"]Derivácia zloženej funkcie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"derzloz" className:"tooltipWhiteBig" place:"bottom"]
+[img src:"./static/images/der_zlozenej.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr3.pdf" /]
+
+[TooltipLink dataFor:"logder"][HeaderWithInfo tag:"h4"]Logaritmické derivovanie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"logder" className:"tooltipWhiteBig" place:"right"]
+[img src:"./static/images/log_der.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr4.pdf" /]
+
+[TooltipLink dataFor:"geomder"][HeaderWithInfo tag:"h4"]Geometrický význam derivácie[/HeaderWithInfo][/TooltipLink]
+
+[ReactTooltip id:"geomder" className:"tooltipWhiteBig" place:"right"]
+[img src:"./static/images/priamka.png"/]
+[img src:"./static/images/geom_der.png"/]
+[img src:"./static/images/smernice.png"/]
+[/ReactTooltip]
+
+[link text:"Príklad 5" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr5.pdf" /][br /]
+[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr6.pdf" /][br /]
+[link text:"Príklad 7" url:"https://matematika.fberg.tuke.sk/zosit1/8/pr7.pdf" /]
 
 [/section]
 [/Page]
