@@ -35,7 +35,9 @@ a_i=b_i.
 
 [/ReactTooltip]
 
-[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr1.pdf" /]
+[link text:"Príklad 1" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr1.pdf" /][br/][br/]
+[link text:"Video k príkladu 1a" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P1a.mov" /][br/]
+[link text:"Video k príkladu 1b" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P1b.mov" /]
 
 [TooltipLink dataFor:"operaciesvektormi"][HeaderWithInfo tag:"h4"]2. Operácie s vektormi[/HeaderWithInfo][/TooltipLink]
 
@@ -71,7 +73,8 @@ d_i=k\cdot a_i.
 
 [/ReactTooltip]
 
-[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr2.pdf" /]
+[link text:"Príklad 2" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr2.pdf" /][br/][br/]
+[link text:"Video k príkladu 2" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P2.mov" /]
 
 [TooltipLink dataFor:"linearnakombinaciavektorov"][HeaderWithInfo tag:"h4"]3. Lineárna kombinácia vektorov[/HeaderWithInfo][/TooltipLink]
 
@@ -93,7 +96,8 @@ ak ho môžeme vyjadriť pomocou týchto vektorov používajúc iba sčítanie a
 [/ReactTooltip]
 
 [link text:"Príklad 3" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr3.pdf" /][br /]
-[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr4.pdf" /]
+[link text:"Príklad 4" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr4.pdf" /][br/][br/]
+[link text:"Video k príkladu 3" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P3.mov" /]
 
 [TooltipLink dataFor:"linearnazavislostanezavislost"][HeaderWithInfo tag:"h4"]4. Lineárna závislosť a nezávislosť vektorov[/HeaderWithInfo][/TooltipLink]
 
@@ -122,7 +126,9 @@ iba ak [Equation]k_1=k_2=\ldots= k_n=0[/Equation].
 [/ReactTooltip]
 
 [link text:"Príklad 5a" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr5a.pdf" /][br /]
-[link text:"Príklad 5b" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr5b.pdf" /][br /]
+[link text:"Príklad 5b" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr5b.pdf" /][br /][br/]
+[link text:"Video k príkladu 5a" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P5a.mov" /][br/]
+[link text:"Video k príkladu 5b" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P5b.mov" /]
 
 [TooltipLink dataFor:"skalarnysucinvektorov"][HeaderWithInfo tag:"h4"]5. Skalárny súčin vektorov[/HeaderWithInfo][/TooltipLink]
 
@@ -157,7 +163,8 @@ Vektory [Equation]\vec{a}=(a_1,\ldots, a_n)[/Equation] a [Equation]\vec{b}=(b_1,
 
 [/ReactTooltip]
 
-[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr6.pdf" /]
+[link text:"Príklad 6" url:"https://matematika.fberg.tuke.sk/zosit1/1/pr6.pdf" /][br/][br/]
+[link text:"Video k príkladu 6" url:"https://matematika.fberg.tuke.sk/zosit1/1/video/C1_P6.mov" /]
 
 [/section]
 [/Page]
