@@ -21,7 +21,7 @@
     "idyll-component": "^1.2.2",
     "idyll-d3-component": "^2.0.0",
     "idyll-function-plot": "^1.0.0",
-    "mathjs": "^6.0.3",
+    "mathjs": "^7.5.1",
     "react-ga": "^2.6.0"
   },
   "devDependencies": {}
