@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "d3": "^4.0.0",
-    "idyll": "^4.0.0",
+    "idyll": "^6.0.0-alpha.6",
     "idyll-component": "^1.2.2",
     "react-ga": "^2.6.0"
   },
